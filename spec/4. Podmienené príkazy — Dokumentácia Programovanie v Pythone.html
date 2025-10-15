@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://python.input.sk/1/04.html#prikaz-vetvenia -->
+<html lang="sk" data-content_root="../"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>4. Podmienené príkazy — Dokumentácia Programovanie v Pythone </title>
+    <link rel="stylesheet" type="text/css" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/pygments.css">
+    <link rel="stylesheet" type="text/css" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/bootstrap-sphinx.css">
+    <script src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/documentation_options.js"></script>
+    <script src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/doctools.js"></script>
+    <script src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/sphinx_highlight.js"></script>
+    <script src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/translations.js"></script>
+    <link rel="icon" href="https://python.input.sk/_static/favicon.png">
+    <link rel="index" title="Index" href="https://python.input.sk/genindex.html">
+    <link rel="search" title="Hľadať" href="https://python.input.sk/search.html">
+    <link rel="copyright" title="Autorské právo" href="https://python.input.sk/copyright.html">
+    <link rel="next" title="5. Zoznamy a n-tice" href="https://python.input.sk/1/05.html">
+    <link rel="prev" title="3. Grafický režim" href="https://python.input.sk/1/03.html">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/jquery-fix.js"></script>
+<script type="text/javascript" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/bootstrap-sphinx.js"></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default ">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://python.input.sk/index.html">
+          Programovanie v Pythone</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button" id="dLabelGlobalToc" data-toggle="dropdown" data-target="#" href="https://python.input.sk/index.html"> <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc" role="menu" aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Zimný semester</span></p>
+<li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/pravidla.html">Priebeh zimného semestra</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/01.html">1. Úvod do Pythonu</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/02.html">2. Podprogramy</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/03.html">3. Grafický režim</a></li><li class="toctree-l1 current"><a class="current reference internal" href="https://python.input.sk/1/04.html#">4. Podmienené príkazy</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/05.html">5. Zoznamy a n-tice</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/06.html">6. Znakové reťazce a súbory</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/07.html">7. Udalosti v grafickej aplikácii</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/08.html">8. Korytnačky (turtle)</a></li>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="https://python.input.sk/1/03.html" title="Previous Chapter: 3. Grafický režim"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">« 3. Grafický režim</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://python.input.sk/1/05.html" title="Next Chapter: 5. Zoznamy a n-tice"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">5. Zoznamy a n-tice »</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="https://python.input.sk/search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search">
+ </div>
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <section id="podmienene-prikazy">
+<h1>4. Podmienené príkazy<a class="headerlink" href="https://python.input.sk/1/04.html#podmienene-prikazy" title="Link to this heading">¶</a></h1>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<aside class="warning sidebar">
+<nav class="contents local" id="obsah">
+<p class="topic-title">Obsah:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="https://python.input.sk/1/04.html#prikaz-vetvenia" id="id6">Príkaz vetvenia</a></p>
+<ul>
+<li><p><a class="reference internal" href="https://python.input.sk/1/04.html#logicke-operacie" id="id7">Logické operácie</a></p></li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/04.html#delitele-cisel" id="id8">Delitele čísel</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/04.html#podmieneny-cyklus" id="id9">Podmienený cyklus</a></p>
+<ul>
+<li><p><a class="reference internal" href="https://python.input.sk/1/04.html#najvacsi-spolocny-delitel" id="id10">Najväčší spoločný deliteľ</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/04.html#cvicenie" id="id11">Cvičenie</a></p></li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/04.html#tyzdenny-projekt" id="id12">2. Týždenný projekt</a></p></li>
+</ul>
+</nav>
+</aside>
+<section id="prikaz-vetvenia">
+<h2><a class="toc-backref" href="https://python.input.sk/1/04.html#id6" role="doc-backlink">Príkaz vetvenia</a><a class="headerlink" href="https://python.input.sk/1/04.html#prikaz-vetvenia" title="Link to this heading">¶</a></h2>
+<p>Pri programovaní často riešime situácie, keď sa má program na základe nejakej podmienky rozhodnúť medzi viacerými možnosťami. Napríklad, program má vypísať, či zadaný počet bodov stačí na známku z predmetu. Preto si najprv vyžiada číslo - získaný počet bodov, potom <strong>porovná</strong> túto hodnotu s požadovanou hranicou, napríklad 100 bodov a na základe toho vypíše, buď že je to dosť na známku, alebo nie je:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">body</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Zadaj získaný počet bodov: '</span><span class="p">))</span>
+<span class="hll"><span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">50</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="s1">'bodov je dostačujúci počet na známku'</span><span class="p">)</span>
+<span class="hll"><span class="k">else</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="s1">'bodov je málo na získanie známky'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Použili sme tu podmienený príkaz (príkaz vetvenia) <code class="docutils literal notranslate"><span class="pre">if</span></code>. Jeho zápis vyzerá takto:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">if</span> <span class="n">podmienka</span><span class="p">:</span>    <span class="c1"># ak podmienka platí, vykonaj 1. skupinu príkazov</span>
+</span>    <span class="n">prikaz</span>
+    <span class="n">prikaz</span>
+    <span class="o">...</span>
+<span class="hll"><span class="k">else</span><span class="p">:</span>            <span class="c1"># ak podmienka neplatí, vykonaj 2. skupinu príkazov</span>
+</span>    <span class="n">prikaz</span>
+    <span class="n">prikaz</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>V našom prvom príklade je v oboch skupinách príkazov len po jednom príkaze <code class="docutils literal notranslate"><span class="pre">print()</span></code>. Odsadenie skupiny príkazov (blok príkazov) má rovnaký význam ako vo for-cykle: budeme ich odsadzovať vždy presne o 4 medzery.</p>
+<p>V pravidlách predmetu programovanie máme takéto kritériá na získanie známky:</p>
+<ul class="simple">
+<li><p>známka <strong>A</strong> aspoň 90 bodov</p></li>
+<li><p>známka <strong>B</strong> aspoň 80 bodov</p></li>
+<li><p>známka <strong>C</strong> aspoň 70 bodov</p></li>
+<li><p>známka <strong>D</strong> aspoň 60 bodov</p></li>
+<li><p>známka <strong>E</strong> aspoň 50 bodov</p></li>
+<li><p>známka <strong>Fx</strong> menej ako 50 bodov</p></li>
+</ul>
+<p>Podmienka pre získanie známky <strong>A</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+<span class="hll">    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku A'</span><span class="p">)</span>
+</span><span class="k">else</span><span class="p">:</span>
+<span class="hll">    <span class="o">...</span>
+</span></pre></div>
+</div>
+<p>Ak je bodov menej ako 90, už to môže byť len horšia známka: dopíšeme testovanie aj známky <strong>B</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku A'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+<span class="hll">    <span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+</span><span class="hll">        <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku B'</span><span class="p">)</span>
+</span><span class="hll">    <span class="k">else</span><span class="p">:</span>
+</span><span class="hll">        <span class="o">...</span>
+</span></pre></div>
+</div>
+<p>Všetky riadky v druhej skupine príkazov (za <code class="docutils literal notranslate"><span class="pre">else</span></code>) musia byť odsadené o 4 medzery, preto napríklad <code class="docutils literal notranslate"><span class="pre">print()</span></code>, ktorý vypisuje správu o známke <strong>B</strong> je odsunutý o 8 medzier. Podobným spôsobom zapíšeme všetky zvyšné podmienky:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">body</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Zadaj získaný počet bodov: '</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku A'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku B'</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+<span class="hll">        <span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+</span><span class="hll">            <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku C'</span><span class="p">)</span>
+</span><span class="hll">        <span class="k">else</span><span class="p">:</span>
+</span><span class="hll">            <span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+</span><span class="hll">                <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku D'</span><span class="p">)</span>
+</span><span class="hll">            <span class="k">else</span><span class="p">:</span>
+</span><span class="hll">                <span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">50</span><span class="p">:</span>
+</span><span class="hll">                    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku E'</span><span class="p">)</span>
+</span><span class="hll">                <span class="k">else</span><span class="p">:</span>
+</span><span class="hll">                    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov si nevyhovel a máš známku Fx'</span><span class="p">)</span>
+</span></pre></div>
+</div>
+<p>Takéto odsadzovanie príkazov je v Pythone veľmi dôležité a musíme byť pritom veľmi presní. Príkaz <code class="docutils literal notranslate"><span class="pre">if</span></code>, ktorý sa nachádza vo vnútri niektorej vetvy iného <code class="docutils literal notranslate"><span class="pre">if</span></code>, sa nazýva <strong>vnorený príkaz if</strong>.</p>
+<p>V Pythone existuje konštrukcia, ktorá uľahčuje takúto vnorenú sériu <code class="docutils literal notranslate"><span class="pre">if</span></code>-ov:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">if</span> <span class="n">podmienka_1</span><span class="p">:</span>     <span class="c1"># ak podmienka_1 platí, vykonaj 1. skupinu príkazov</span>
+</span>    <span class="n">prikaz</span>
+    <span class="o">...</span>
+<span class="hll"><span class="k">elif</span> <span class="n">podmienka_2</span><span class="p">:</span>   <span class="c1"># ak podmienka_1 neplatí, ale platí podmienka_2, ...</span>
+</span>    <span class="n">prikaz</span>
+    <span class="o">...</span>
+<span class="hll"><span class="k">elif</span> <span class="n">podmienka_3</span><span class="p">:</span>   <span class="c1"># ak ani podmienka_1 ani podmienka_2 neplatia, ale platí podmienka_3, ...</span>
+</span>    <span class="n">prikaz</span>
+    <span class="o">...</span>
+<span class="hll"><span class="k">else</span><span class="p">:</span>               <span class="c1"># ak žiadna z podmienok neplatí, ...</span>
+</span>    <span class="n">prikaz</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>Predchádzajúci program môžeme zapísať aj takto:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">body</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Zadaj získaný počet bodov: '</span><span class="p">))</span>
+<span class="hll"><span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku A'</span><span class="p">)</span>
+<span class="hll"><span class="k">elif</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku B'</span><span class="p">)</span>
+<span class="hll"><span class="k">elif</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku C'</span><span class="p">)</span>
+<span class="hll"><span class="k">elif</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku D'</span><span class="p">)</span>
+<span class="hll"><span class="k">elif</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">50</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku E'</span><span class="p">)</span>
+<span class="hll"><span class="k">else</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov si nevyhovel a máš známku Fx'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ukážme ešte jedno riešenie tejto úlohy - jednotlivé podmienky zapíšeme ako intervaly:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">body</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Zadaj získaný počet bodov: '</span><span class="p">))</span>
+<span class="hll"><span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku A'</span><span class="p">)</span>
+<span class="hll"><span class="k">if</span> <span class="mi">80</span> <span class="o">&lt;=</span> <span class="n">body</span> <span class="o">&lt;</span> <span class="mi">90</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku B'</span><span class="p">)</span>
+<span class="hll"><span class="k">if</span> <span class="mi">70</span> <span class="o">&lt;=</span> <span class="n">body</span> <span class="o">&lt;</span> <span class="mi">80</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku C'</span><span class="p">)</span>
+<span class="hll"><span class="k">if</span> <span class="mi">60</span> <span class="o">&lt;=</span> <span class="n">body</span> <span class="o">&lt;</span> <span class="mi">70</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku D'</span><span class="p">)</span>
+<span class="hll"><span class="k">if</span> <span class="mi">50</span> <span class="o">&lt;=</span> <span class="n">body</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku E'</span><span class="p">)</span>
+<span class="hll"><span class="k">if</span> <span class="n">body</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov si nevyhovel a máš známku Fx'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>V tomto riešení využívame to, že <code class="docutils literal notranslate"><span class="pre">else</span></code>-vetva v príkaze <code class="docutils literal notranslate"><span class="pre">if</span></code> môže chýbať, a teda pri neplatnej podmienke sa nevykoná nič:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">if</span> <span class="n">podmienka</span><span class="p">:</span>        <span class="c1"># ak podmienka platí, vykonaj skupinu príkazov</span>
+</span>    <span class="n">prikaz</span>
+    <span class="n">prikaz</span>
+    <span class="o">...</span>
+                     <span class="c1"># ak podmienka neplatí, nevykonaj nič</span>
+</pre></div>
+</div>
+<p>Mohli by sme to zapísať aj takto:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">podmienka</span><span class="p">:</span>        <span class="c1"># ak podmienka platí, vykonaj skupinu príkazov</span>
+    <span class="n">prikaz</span>
+    <span class="n">prikaz</span>
+    <span class="o">...</span>
+<span class="hll"><span class="k">else</span><span class="p">:</span>
+</span><span class="hll">    <span class="k">pass</span>             <span class="c1"># ak podmienka neplatí, nevykonaj nič</span>
+</span></pre></div>
+</div>
+<p>kde <code class="docutils literal notranslate"><span class="pre">pass</span></code> je tzv. <strong>prázdny príkaz</strong>, t.j. príkaz, ktorý nerobí nič. Môžeme ho použiť všade, kde chceme zapísať tzv. prázdny blok príkazov. Hoci je tento zápis správny, nezvykne sa takto používať.</p>
+<p>Zrejme každý príkaz <code class="docutils literal notranslate"><span class="pre">if</span></code> po kontrole podmienky (a prípadnom výpise správy) pokračuje na ďalšom príkaze, ktorý nasleduje za ním (a má rovnaké odsadenie ako <code class="docutils literal notranslate"><span class="pre">if</span></code>). Okrem toho vidíme, že teraz sú niektoré podmienky trochu zložitejšie, lebo testujeme, či sa hodnota nachádza v nejakom intervale. (podmienku <code class="docutils literal notranslate"><span class="pre">80</span> <span class="pre">&lt;=</span> <span class="pre">body</span> <span class="pre">&lt;</span> <span class="pre">90</span></code> sme mohli zapísať aj takto <code class="docutils literal notranslate"><span class="pre">90</span> <span class="pre">&gt;</span> <span class="pre">body</span> <span class="pre">&gt;=</span> <span class="pre">80</span></code>)</p>
+<p>V Pythone môžeme zapisovať podmienky podobne, ako je to bežné v matematike:</p>
+<table class="align-default table" border="0">
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">body</span> <span class="pre">&lt;</span> <span class="pre">90</span></code></p></td>
+<td><p>je menšie ako</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">body</span> <span class="pre">&lt;=</span> <span class="pre">80</span></code></p></td>
+<td><p>je menšie alebo rovné</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">body</span> <span class="pre">==</span> <span class="pre">100</span></code></p></td>
+<td><p>rovná sa</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">body</span> <span class="pre">!=</span> <span class="pre">727</span></code></p></td>
+<td><p>nerovná sa</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">body</span> <span class="pre">&gt;</span> <span class="pre">70</span></code></p></td>
+<td><p>je väčšie ako</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">body</span> <span class="pre">&gt;=</span> <span class="pre">80</span></code></p></td>
+<td><p>je väčšie alebo rovné</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">50</span> <span class="pre">&lt;=</span> <span class="pre">body</span> <span class="pre">&lt;</span> <span class="pre">60</span></code></p></td>
+<td><p>je väčšie ako … a zároveň menšie alebo rovné …</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&lt;</span> <span class="pre">b</span> <span class="pre">&lt;</span> <span class="pre">c</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">a</span></code> je menšie ako <code class="docutils literal notranslate"><span class="pre">b</span></code> a zároveň je <code class="docutils literal notranslate"><span class="pre">b</span></code> menšie ako <code class="docutils literal notranslate"><span class="pre">c</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>Ukážme použitie podmieneného príkazu aj v grafickom programe. Začneme s programom, ktorý na náhodné pozície nakreslí 100 rôzne veľkých štvorčekov. Aj veľkosť týchto štvorčekov bude náhodné číslo od 1 do 30. Štvorčeky bude zafarbovať podľa takéhoto pravidla:</p>
+<ul class="simple">
+<li><p>ak je ich veľkosť menšia alebo rovná 10, budú červené</p></li>
+<li><p>inak, ak ich veľkosť menšia alebo rovná 20, budú modré</p></li>
+<li><p>inak nebudú zafarbené, t.j. ich farba výplne bude <code class="docutils literal notranslate"><span class="pre">''</span></code></p></li>
+</ul>
+<p>Zrejme v poslednej skupine štvorcov budú len tie, ktoré sú väčšie ako 20. Zapíšme program:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">()</span>
+<span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">350</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">230</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="hll">    <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'red'</span>
+<span class="hll">    <span class="k">elif</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="mi">20</span><span class="p">:</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'blue'</span>
+<span class="hll">    <span class="k">else</span><span class="p">:</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">''</span>
+    <span class="n">canvas</span><span class="o">.</span><span class="n">create_rectangle</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">a</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">a</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">farba</span><span class="p">)</span>
+
+<span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Aj v tomto programe využívame sériu <code class="docutils literal notranslate"><span class="pre">if</span></code> - <code class="docutils literal notranslate"><span class="pre">elif</span></code> - <code class="docutils literal notranslate"><span class="pre">else</span></code>, rovnako ako pri prepočítavaní bodov na známky v predchádzajúcom príklade. Dostávame</p>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_01.png"><img alt="../_images/104_01.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_01.png" style="width: 286.5px; height: 201.0px;">
+</a>
+<p>Pokračujme s grafickým programom, ktorý na náhodné pozície nakreslí 1000 malých krúžkov:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="hll"><span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+</span><span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+    <span class="n">farba</span> <span class="o">=</span> <span class="s1">'blue'</span>
+    <span class="n">canvas</span><span class="o">.</span><span class="n">create_oval</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">farba</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_02.png"><img alt="../_images/104_02.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_02.png" style="width: 228.0px; height: 228.0px;">
+</a>
+<p>Všimnite si, že krúžky sú bez obrysu (doteraz mali kruhy čierny tenký obrys). Je to vďaka pomenovanému parametru <code class="docutils literal notranslate"><span class="pre">width=0</span></code>, ktorým určujeme hrúbku obrysu, teda teraz bude <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+<p>Niektoré z týchto krúžkov zafarbíme tak, že tie z nich, ktoré sú v ľavej polovici plochy budú červené a zvyšné v pravej polovici (teda <code class="docutils literal notranslate"><span class="pre">else</span></code> vetva) budú modré:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+<span class="hll">    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">150</span><span class="p">:</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'red'</span>
+<span class="hll">    <span class="k">else</span><span class="p">:</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'blue'</span>
+    <span class="n">canvas</span><span class="o">.</span><span class="n">create_oval</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">farba</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_03.png"><img alt="../_images/104_03.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_03.png" style="width: 228.0px; height: 228.0px;">
+</a>
+<p>Skúsme pridať ešte jednu podmienku: všetky bodky v spodnej polovici (<code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">&gt;</span> <span class="pre">150</span></code>) budú zelené, takže rozdelenie na červené a modré bude len v hornej polovici. Jedno z možných riešení:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+<span class="hll">    <span class="k">if</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="mi">150</span><span class="p">:</span>
+</span><span class="hll">        <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">150</span><span class="p">:</span>
+</span>            <span class="n">farba</span> <span class="o">=</span> <span class="s1">'red'</span>
+<span class="hll">        <span class="k">else</span><span class="p">:</span>
+</span>            <span class="n">farba</span> <span class="o">=</span> <span class="s1">'blue'</span>
+<span class="hll">    <span class="k">else</span><span class="p">:</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'green'</span>
+    <span class="n">canvas</span><span class="o">.</span><span class="n">create_oval</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">farba</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_04.png"><img alt="../_images/104_04.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_04.png" style="width: 228.0px; height: 228.0px;">
+</a>
+<p>Podobne, ako sme to robili s intervalmi bodov pre rôzne známky, môžeme aj toto riešenie zapísať tak, že použijeme komplexnejšiu podmienku:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+<span class="hll">    <span class="k">if</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="mi">150</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">150</span><span class="p">:</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'red'</span>
+<span class="hll">    <span class="k">elif</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="mi">150</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">150</span><span class="p">:</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'blue'</span>
+<span class="hll">    <span class="k">else</span><span class="p">:</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'green'</span>
+    <span class="n">canvas</span><span class="o">.</span><span class="n">create_oval</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">farba</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_05.png"><img alt="../_images/104_05.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_05.png" style="width: 228.0px; height: 228.0px;">
+</a>
+<p>Podmienky v Pythone môžu obsahovať logické operácie a tieto majú obvyklý význam z matematiky:</p>
+<ul class="simple">
+<li><p>podmienka1 <code class="docutils literal notranslate"><span class="pre">and</span></code> podmienka2 … (a súčasne) znamená, že musia platiť obe podmienky</p></li>
+<li><p>podmienka1 <code class="docutils literal notranslate"><span class="pre">or</span></code> podmienka2 … (alebo) znamená, že musí platiť aspoň jedna z podmienok</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">not</span></code> podmienka … (neplatí) znamená, že daná podmienka neplatí</p></li>
+</ul>
+<p>Otestovať rôzne kombinácie podmienok môžeme, napríklad takto:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span>
+<span class="hll"><span class="go">    False</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="hll"><span class="go">    True</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">&lt;</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">b</span>
+<span class="hll"><span class="go">    True</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">!=</span> <span class="mi">7</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">==</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">3</span>
+<span class="hll"><span class="go">    True</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">==</span> <span class="mi">7</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="hll"><span class="go">    False</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="ow">not</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span>          <span class="c1"># to isté ako  a != b</span>
+<span class="hll"><span class="go">    True</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span> <span class="o">==</span> <span class="s1">'1'</span>
+<span class="hll"><span class="go">    False</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span> <span class="o">&lt;</span> <span class="s1">'2'</span>             <span class="c1"># nemôžeme takto porovnaváť čísla a znaky</span>
+<span class="hll"><span class="go">    ...</span>
+</span><span class="hll"><span class="go">    TypeError: unorderable types: int() &lt; str()</span>
+</span></pre></div>
+</div>
+<p>Všimnite si, že podmienky, ktoré platia, majú hodnotu <code class="docutils literal notranslate"><span class="pre">True</span></code> a ktoré neplatia, majú <code class="docutils literal notranslate"><span class="pre">False</span></code> - sú to dve špeciálne hodnoty, ktoré Python používa ako výsledky porovnávania - tzv. logických výrazov. Sú <strong>logického typu</strong>, tzv. <code class="docutils literal notranslate"><span class="pre">bool</span></code>. Môžeme to skontrolovať:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+<span class="hll"><span class="go">    &lt;class 'int'&gt;</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="hll"><span class="go">    &lt;class 'float'&gt;</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="s1">'12'</span><span class="p">)</span>
+<span class="hll"><span class="go">    &lt;class 'str'&gt;</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span>
+<span class="hll"><span class="go">    &lt;class 'bool'&gt;</span>
+</span></pre></div>
+</div>
+<p>Aj logické hodnoty môžeme medzi sebou porovnávať. Zamyslite sa nad takouto podmienkou v <code class="docutils literal notranslate"><span class="pre">if</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+<span class="hll">    <span class="k">if</span> <span class="p">(</span><span class="n">y</span> <span class="o">&lt;</span> <span class="mi">150</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">150</span><span class="p">):</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'red'</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'blue'</span>
+    <span class="n">canvas</span><span class="o">.</span><span class="n">create_oval</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">farba</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_06.png"><img alt="../_images/104_06.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_06.png" style="width: 228.0px; height: 228.0px;">
+</a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<section id="logicke-operacie">
+<h3><a class="toc-backref" href="https://python.input.sk/1/04.html#id7" role="doc-backlink">Logické operácie</a><a class="headerlink" href="https://python.input.sk/1/04.html#logicke-operacie" title="Link to this heading">¶</a></h3>
+<p>Pozrime sa podrobnejšie na logické operácie <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code> a <code class="docutils literal notranslate"><span class="pre">not</span></code>. Tieto operácie samozrejme fungujú pre logické hodnoty <code class="docutils literal notranslate"><span class="pre">True</span></code> a <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<table class="align-default table" id="id3" border="0">
+<caption><span class="caption-text">Logický súčin <strong>a súčasne</strong></span><a class="headerlink" href="https://python.input.sk/1/04.html#id3" title="Link to this table">¶</a></caption>
+<colgroup>
+<col style="width: 7.1%">
+<col style="width: 7.1%">
+<col style="width: 10.0%">
+<col style="width: 75.7%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>A and B</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="align-default table" id="id4" border="0">
+<caption><span class="caption-text">Logický súčet <strong>alebo</strong></span><a class="headerlink" href="https://python.input.sk/1/04.html#id4" title="Link to this table">¶</a></caption>
+<colgroup>
+<col style="width: 7.1%">
+<col style="width: 7.1%">
+<col style="width: 10.0%">
+<col style="width: 75.7%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>A or B</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="align-default table" id="id5" border="0">
+<caption><span class="caption-text">Negácia <strong>neplatí</strong></span><a class="headerlink" href="https://python.input.sk/1/04.html#id5" title="Link to this table">¶</a></caption>
+<colgroup>
+<col style="width: 7.1%">
+<col style="width: 7.1%">
+<col style="width: 85.7%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>not A</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Logické operácie fungujú nielen pre logický typ, ale aj pre skoro všetky ďalšie typy. V tomto prípade Python pre <strong>každý typ</strong> definuje prípady, ktoré on (Python) chápe ako <code class="docutils literal notranslate"><span class="pre">False</span></code> a zrejme všetky ostatné hodnoty tohto typu chápe ako <code class="docutils literal notranslate"><span class="pre">True</span></code>. Ukážme prípady pre doteraz známe typy, ktoré označujú logickú hodnotu <code class="docutils literal notranslate"><span class="pre">False</span></code>:</p>
+<table class="align-default table" border="0">
+<colgroup>
+<col style="width: 7.1%">
+<col style="width: 14.3%">
+<col style="width: 14.3%">
+<col style="width: 64.3%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>typ</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">==</span> <span class="pre">0</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">!=</span> <span class="pre">0</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">float</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">==</span> <span class="pre">0.0</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">!=</span> <span class="pre">0.0</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">str</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">==</span> <span class="pre">''</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">!=</span> <span class="pre">''</span></code></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Tejto tabuľke budeme rozumieť takto: keď bude Python niekde očakávať logickú hodnotu (napríklad v príkaze <code class="docutils literal notranslate"><span class="pre">if</span></code>) a bude tam namiesto toho celé číslo, tak, ak má hodnotu <strong>0</strong>, pochopí to ako <code class="docutils literal notranslate"><span class="pre">False</span></code> a ak má hodnotu rôznu od <strong>0</strong>, bude to pre neho znamenať <code class="docutils literal notranslate"><span class="pre">True</span></code>. Podobne aj s reťazcami: ak ako podmienku <code class="docutils literal notranslate"><span class="pre">if</span></code> uvedieme znakový reťazec, tento bude reprezentovať <code class="docutils literal notranslate"><span class="pre">False</span></code>, ak je prázdny a <code class="docutils literal notranslate"><span class="pre">True</span></code>, ak je neprázdny.</p>
+<p>Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pocet</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'zadaj: '</span><span class="p">))</span>
+<span class="hll"><span class="k">if</span> <span class="n">pocet</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'pocet je rôzny od 0'</span><span class="p">)</span>
+<span class="hll"><span class="k">else</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'pocet je 0'</span><span class="p">)</span>
+<span class="n">meno</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'zadaj: '</span><span class="p">)</span>
+<span class="hll"><span class="k">if</span> <span class="n">meno</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'meno nie je prázdny reťazec'</span><span class="p">)</span>
+<span class="hll"><span class="k">else</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'meno je prázdny reťazec'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Logické operácie <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code> a <code class="docutils literal notranslate"><span class="pre">not</span></code> majú v skutočnosti tiež trochu rozšírenú interpretáciu:</p>
+<aside class="topic">
+<p class="topic-title">operácia: prvý <code class="docutils literal notranslate"><span class="pre">and</span></code> druhý</p>
+<ul class="simple">
+<li><p>ak <strong>prvý</strong> nie je <code class="docutils literal notranslate"><span class="pre">False</span></code>, tak</p>
+<ul>
+<li><p>výsledkom je <strong>druhý</strong></p></li>
+</ul>
+</li>
+<li><p>inak (teda <strong>prvý</strong> je <code class="docutils literal notranslate"><span class="pre">False</span></code>)</p>
+<ul>
+<li><p>výsledkom je <strong>prvý</strong></p></li>
+</ul>
+</li>
+</ul>
+</aside>
+<p>Môžeme upraviť aj tabuľku pravdivostných hodnôt:</p>
+<table class="align-default table" border="0">
+<colgroup>
+<col style="width: 7.1%">
+<col style="width: 7.1%">
+<col style="width: 14.3%">
+<col style="width: 71.4%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>A and B</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><em>hocičo</em></p></td>
+<td><p><strong>A</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p><em>hocičo</em></p></td>
+<td><p><strong>B</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<aside class="topic">
+<p class="topic-title">operácia: prvý <code class="docutils literal notranslate"><span class="pre">or</span></code> druhý</p>
+<ul class="simple">
+<li><p>ak <strong>prvý</strong> nie je <code class="docutils literal notranslate"><span class="pre">False</span></code>, tak</p>
+<ul>
+<li><p>výsledkom je <strong>prvý</strong></p></li>
+</ul>
+</li>
+<li><p>inak (teda <strong>prvý</strong> je <code class="docutils literal notranslate"><span class="pre">False</span></code>)</p>
+<ul>
+<li><p>výsledkom je <strong>druhý</strong></p></li>
+</ul>
+</li>
+</ul>
+</aside>
+<p>Tabuľka:</p>
+<table class="align-default table" border="0">
+<colgroup>
+<col style="width: 7.1%">
+<col style="width: 7.1%">
+<col style="width: 14.3%">
+<col style="width: 71.4%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>A or B</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><em>hocičo</em></p></td>
+<td><p><strong>B</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p><em>hocičo</em></p></td>
+<td><p><strong>A</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<aside class="topic">
+<p class="topic-title">operácia: <code class="docutils literal notranslate"><span class="pre">not</span></code> prvý</p>
+<ul class="simple">
+<li><p>ak <strong>prvý</strong> nie je <code class="docutils literal notranslate"><span class="pre">False</span></code>, tak</p>
+<ul>
+<li><p>výsledkom je <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+</ul>
+</li>
+<li><p>inak</p>
+<ul>
+<li><p>výsledkom je <code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
+</ul>
+</li>
+</ul>
+</aside>
+<p>Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span>       <span class="c1"># keďže 1+2 nie je False, výsledkom je 3+4</span>
+<span class="hll"><span class="go">    7</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="s1">'ahoj'</span> <span class="ow">or</span> <span class="s1">'Python'</span>    <span class="c1"># keďže 'ahoj' nie je False, výsledkom je 'ahoj'</span>
+<span class="hll"><span class="go">    'ahoj'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="s1">''</span> <span class="ow">or</span> <span class="s1">'Python'</span>        <span class="c1"># keďže '' je False, výsledkom je 'Python'</span>
+<span class="hll"><span class="go">    'Python'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="ow">and</span> <span class="s1">'kuk'</span>       <span class="c1"># keďže 3&lt;4 nie je False, výsledkom je 'kuk'</span>
+<span class="hll"><span class="go">    'kuk'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="kc">False</span> <span class="ow">or</span> <span class="kc">True</span>         <span class="c1"># keďže False je False, výsledkom je True</span>
+<span class="hll"><span class="go">    True</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="s1">'False'</span> <span class="ow">or</span> <span class="s1">'True'</span>     <span class="c1"># keďže 'False' nie je False, výsledkom je 'False'</span>
+<span class="hll"><span class="go">    'False'</span>
+</span></pre></div>
+</div>
+<p>Podmienený príkaz sa často používa pri náhodnom rozhodovaní. Napríklad, hádžeme mincou (náhodné hodnoty 0 a 1) a ak padne 1, kreslíme náhodnú kružnicu, inak nakreslíme náhodný štvorec. Toto opakujeme 10-krát:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+
+<span class="hll">    <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>         <span class="c1"># t.j. random.randrange(2) != 0</span>
+</span>        <span class="n">canvas</span><span class="o">.</span><span class="n">create_oval</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">a</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="n">a</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">a</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">a</span><span class="p">)</span>
+<span class="hll">    <span class="k">else</span><span class="p">:</span>
+</span>        <span class="n">canvas</span><span class="o">.</span><span class="n">create_rectangle</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">a</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="n">a</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">a</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">a</span><span class="p">)</span>
+
+<span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_07.png"><img alt="../_images/104_07.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_07.png" style="width: 228.0px; height: 228.0px;">
+</a>
+<p>Približne rovnaké výsledky by sme dostali, ak by sme hádzali kockou so 6 možnosťami (<code class="docutils literal notranslate"><span class="pre">random.randint(1,</span> <span class="pre">6)</span></code>) a pre čísla 1, 2, 3 by sme kreslili kružnicu, inak štvorec.</p>
+<p>Túto ideu môžeme využiť aj pre takúto úlohu: vygenerujte 1000 farebných štvorčekov - modré a červené, pričom ich pomer je <strong>1:50</strong>, t.j. na 50 červených štvorčekov pripadne približne 1 modrý:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+<span class="hll">    <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">50</span><span class="p">):</span>             <span class="c1"># t.j. random.randrange(50) != 0</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'red'</span>
+<span class="hll">    <span class="k">else</span><span class="p">:</span>
+</span>        <span class="n">farba</span> <span class="o">=</span> <span class="s1">'blue'</span>
+    <span class="n">canvas</span><span class="o">.</span><span class="n">create_rectangle</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">farba</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_08.png"><img alt="../_images/104_08.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_08.png" style="width: 228.0px; height: 228.0px;">
+</a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+<section id="delitele-cisel">
+<h3><a class="toc-backref" href="https://python.input.sk/1/04.html#id8" role="doc-backlink">Delitele čísel</a><a class="headerlink" href="https://python.input.sk/1/04.html#delitele-cisel" title="Link to this heading">¶</a></h3>
+<p>Nasledovný príklad zisťuje, akých deliteľov má zadané číslo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">delitele</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+    <span class="n">pocet</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'delitele:'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">delitel</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">cislo</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<span class="hll">        <span class="k">if</span> <span class="n">cislo</span> <span class="o">%</span> <span class="n">delitel</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>        <span class="c1"># mohli by sme zapísať aj  if not cislo % delitel:</span>
+</span>            <span class="n">pocet</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">delitel</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'počet deliteľov:'</span><span class="p">,</span> <span class="n">pocet</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Výstup môže byť napríklad takýto:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; delitele(100)
+<span class="hll">    delitele: 1 2 4 5 10 20 25 50 100
+</span><span class="hll">    počet deliteľov: 9
+</span></pre></div>
+</div>
+<p>Malou modifikáciou tejto úlohy vieme vytvoriť ďalšie dva programy. Prvý zisťuje, či je zadané číslo prvočíslo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">pocet_delitelov</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+    <span class="n">pocet</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">delitel</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">cislo</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<span class="hll">        <span class="k">if</span> <span class="n">cislo</span> <span class="o">%</span> <span class="n">delitel</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span>            <span class="n">pocet</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">pocet</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">je_prvocislo</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+<span class="hll">    <span class="k">if</span> <span class="n">pocet_delitelov</span><span class="p">(</span><span class="n">cislo</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+</span>        <span class="k">return</span> <span class="kc">True</span>
+<span class="hll">    <span class="k">else</span><span class="p">:</span>
+</span>        <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<p>Po spustení, napríklad:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; je_prvocislo(101)
+<span class="hll">    True
+</span></pre></div>
+</div>
+<p>Všimnite si, že záverečný <code class="docutils literal notranslate"><span class="pre">if</span></code> vo funkcii <code class="docutils literal notranslate"><span class="pre">je_prvocislo</span></code>, môžeme zapísať výrazne efektívnejšie (a „pythonovejšie“):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">je_prvocislo</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+<span class="hll">    <span class="k">return</span> <span class="n">pocet_delitelov</span><span class="p">(</span><span class="n">cislo</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+</span></pre></div>
+</div>
+<p>Ďalší program zisťuje, či je nejaké číslo dokonalé, t.j. súčet všetkých deliteľov menších ako samotné číslo sa rovná samotnému číslu. Na základe tohto nájde (postupne preverí) všetky dokonalé čísla do 10000:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">sucet_delitelov</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+    <span class="n">sucet</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">delitel</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">cislo</span><span class="p">):</span>
+<span class="hll">        <span class="k">if</span> <span class="n">cislo</span> <span class="o">%</span> <span class="n">delitel</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span>            <span class="n">sucet</span> <span class="o">+=</span> <span class="n">delitel</span>
+    <span class="k">return</span> <span class="n">sucet</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">najdi_dokonale</span><span class="p">(</span><span class="n">do</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'dokonalé čísla do </span><span class="si">{</span><span class="n">do</span><span class="si">}</span><span class="s1"> sú'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">cislo</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10001</span><span class="p">):</span>
+<span class="hll">        <span class="k">if</span> <span class="n">sucet_delitelov</span><span class="p">(</span><span class="n">cislo</span><span class="p">)</span> <span class="o">==</span> <span class="n">cislo</span><span class="p">:</span>
+</span>            <span class="nb">print</span><span class="p">(</span><span class="n">cislo</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">', '</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'=== viac ich už nie je ==='</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Program vypíše:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; najdi_dokonale(10000)
+    dokonalé čísla do 10000 sú 6, 28, 496, 8128,
+    === viac ich už nie je ===
+</pre></div>
+</div>
+<p>Vráťme sa k programu, ktorý zisťuje, či je nejaké číslo prvočíslo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">pocet_delitelov</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+    <span class="n">pocet</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">delitel</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">cislo</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<span class="hll">        <span class="k">if</span> <span class="n">cislo</span> <span class="o">%</span> <span class="n">delitel</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span>            <span class="n">pocet</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">pocet</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">je_prvocislo</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+<span class="hll">    <span class="k">return</span> <span class="n">pocet_delitelov</span><span class="p">(</span><span class="n">cislo</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+</span></pre></div>
+</div>
+<p>for-cyklus vo funkcii <code class="docutils literal notranslate"><span class="pre">pocet_delitelov</span></code> prejde vždy <code class="docutils literal notranslate"><span class="pre">cislo</span></code>-krát prechodov - bude kontrolovať, či je <code class="docutils literal notranslate"><span class="pre">cislo</span></code> deliteľné premennou <code class="docutils literal notranslate"><span class="pre">delitel</span></code>. Asi by nám ale stačilo zistiť, či existuje aspoň jeden deliteľ, ktorý je väčší ako <strong>1</strong> a menší ako <strong>cislo</strong>. Ak taký nájdeme (t.j. platí <code class="docutils literal notranslate"><span class="pre">cislo</span> <span class="pre">%</span> <span class="pre">delitel</span> <span class="pre">==</span> <span class="pre">0</span></code>), cyklus už ďalej nemusí preverovať zvyšné delitele. Predstavme si, že chceme zisťovať, či číslo <strong>1000000</strong> je prvočíslo. Tento náš program už pri treťom prechode cyklu (keď <code class="docutils literal notranslate"><span class="pre">delitel</span></code> má hodnotu 3) „vie“, že <code class="docutils literal notranslate"><span class="pre">pocet</span></code> je viac ako 2, a teda to určite nebude prvočíslo. Úplne zbytočne 999997-krát zisťuje, či nejaký deliteľ delí alebo nedelí naše <code class="docutils literal notranslate"><span class="pre">cislo</span></code>. V tomto prípade by sa <strong>vykonávanie cyklu mohlo prerušiť</strong> a dostali by sme oveľa rýchlejšie rovnako správny výsledok. Na prerušovanie for-cyklu použijeme špeciálny príkaz <strong>break</strong>, ktorý ale môžeme použiť len v tele cyklu (hoci v našom prípade sa to dá ukončiť aj pomocou <code class="docutils literal notranslate"><span class="pre">return</span></code>, čo uvidíme neskôr).</p>
+<aside class="topic">
+<p class="topic-title">Prerušenie cyklu pomocou <strong>break</strong></p>
+<p>Príkaz <code class="docutils literal notranslate"><span class="pre">break</span></code> v tele cyklu spôsobí ukončenie cyklu, t.j. vykonávanie príkazov cyklu sa v tomto momente preruší a pokračuje sa až za prvým príkazom za cyklom. Premenná cyklu bude mať potom hodnotu naposledy vykonávaného prechodu. Príkaz <code class="docutils literal notranslate"><span class="pre">break</span></code> sa musí použiť v nejakom vnorenom podmienenom príkaze <code class="docutils literal notranslate"><span class="pre">if</span></code>. Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">premenná</span> <span class="ow">in</span> <span class="o">...</span><span class="p">:</span>
+    <span class="n">príkazy1</span>
+<span class="hll">    <span class="k">if</span> <span class="n">podmienka</span><span class="p">:</span>
+</span><span class="hll">        <span class="k">break</span>
+</span>    <span class="n">príkazy2</span>
+<span class="n">príkazy_za_cyklom</span>
+</pre></div>
+</div>
+<p>V každom prechode cyklu sa najprv vykonajú <code class="docutils literal notranslate"><span class="pre">príkazy1</span></code>. Potom odkontroluje <code class="docutils literal notranslate"><span class="pre">podmienka</span></code>: ak je pravdivá, vykonávanie cyklu končí a pokračuje sa na <code class="docutils literal notranslate"><span class="pre">príkazy_za_cyklom</span></code>. Ak je podmienka nepravdivá (neplatí), cyklus pokračuje vykonávaním <code class="docutils literal notranslate"><span class="pre">príkazy2</span></code> a prípadnými ďalšími prechodmi cyklu.</p>
+</aside>
+<p>Vylepšime cyklus na zisťovanie prvočísel s prerušením pomocou <code class="docutils literal notranslate"><span class="pre">break</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ma_delitela</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+    <span class="n">ma</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">for</span> <span class="n">delitel</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">cislo</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">cislo</span> <span class="o">%</span> <span class="n">delitel</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="hll">            <span class="n">ma</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span class="hll">            <span class="k">break</span>
+</span>    <span class="k">return</span> <span class="n">ma</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">je_prvocislo</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">cislo</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">ma_delitela</span><span class="p">(</span><span class="n">cislo</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Funkciu <code class="docutils literal notranslate"><span class="pre">pocet_delitelov(cislo)</span></code> sme tu nahradili funkciou <code class="docutils literal notranslate"><span class="pre">ma_delitela(cislo)</span></code>, ktorá hľadá prvého delitela a vtedy vráti <code class="docutils literal notranslate"><span class="pre">True</span></code>, ak nenájde židneho, vráti <code class="docutils literal notranslate"><span class="pre">False</span></code>. Táto funkcia má jeden problém: aj pre <code class="docutils literal notranslate"><span class="pre">cislo</span></code> rovné <code class="docutils literal notranslate"><span class="pre">1</span></code> vráti <code class="docutils literal notranslate"><span class="pre">False</span></code>, čo ale nie je prvočíslo.</p>
+<p>Keďže po vyskočení z for-cyklu je už iba <code class="docutils literal notranslate"><span class="pre">return</span></code>, môžeme to zapísať aj bez <code class="docutils literal notranslate"><span class="pre">break</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ma_delitela</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">delitel</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">cislo</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">cislo</span> <span class="o">%</span> <span class="n">delitel</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="hll">            <span class="k">return</span> <span class="kc">True</span>
+</span><span class="hll">    <span class="k">return</span> <span class="kc">False</span>
+</span></pre></div>
+</div>
+<p>Otestujte zisťovaním, či je <code class="docutils literal notranslate"><span class="pre">1000000000</span></code> prvočíslo. Pomocou predchádzajúcej verzie programu (bez <code class="docutils literal notranslate"><span class="pre">break</span></code>) by sme sa výsledku nedočkali, ale teraz sa dozvieme veľmi rýchlo, že:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; je_prvocislo(1000000000)
+    False
+</pre></div>
+</div>
+<p>Všimnite si, že v tomto prípade vôbec nepotrebujeme premennú <code class="docutils literal notranslate"><span class="pre">pocet</span></code>, ktorá počítala počet deliteľov. Funkciu <code class="docutils literal notranslate"><span class="pre">je_prvocislo</span></code> môžeme zapísať aj bez pomocnej funkcie <code class="docutils literal notranslate"><span class="pre">ma_delitela</span></code> takto:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">je_prvocislo</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">delitel</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">cislo</span><span class="p">):</span>
+<span class="hll">        <span class="k">if</span> <span class="n">cislo</span> <span class="o">%</span> <span class="n">delitel</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span>            <span class="k">return</span> <span class="kc">False</span>
+<span class="hll">    <span class="k">return</span> <span class="n">cislo</span> <span class="o">&gt;</span> <span class="mi">1</span>
+</span></pre></div>
+</div>
+<p>Keďže hľadáme delitele len z polo otvoreného intervalu <code class="docutils literal notranslate"><span class="pre">&lt;2,</span> <span class="pre">cislo)</span></code>, už prvý deliteľ označuje, že to nie je prvočíslo. Keď for-cyklus skončí, ešte skontrolujeme hodnotu <code class="docutils literal notranslate"><span class="pre">1</span></code>, ktorá hoci nemá delitele väčšie ako 1, nie je to prvočíslo.</p>
+<p>Pripomeňme si ešte úlohu zo začiatku prednášky, v ktorej sa z počtu bodov zisťuje výsledné hodnotenie. Prepíšme teraz sériu príkazov <code class="docutils literal notranslate"><span class="pre">if</span></code> do for-cyklu, v ktorom bude jediný <code class="docutils literal notranslate"><span class="pre">if</span></code> a prerušenie cyklu pomocou <code class="docutils literal notranslate"><span class="pre">break</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">body</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Zadaj získaný počet bodov: '</span><span class="p">))</span>
+<span class="n">hranica</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="k">for</span> <span class="n">znamka</span> <span class="ow">in</span> <span class="s1">'ABCDEF'</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">body</span> <span class="o">&gt;=</span> <span class="n">hranica</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="n">hranica</span> <span class="o">-=</span> <span class="mi">10</span>
+
+<span class="k">if</span> <span class="n">znamka</span> <span class="o">!=</span> <span class="s1">'F'</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov získavaš známku'</span><span class="p">,</span> <span class="n">znamka</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'za'</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="s1">'bodov si nevyhovel a máš známku Fx'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>V tomto riešení vidíme, že vo for-cykle sa postupne prechádzajú všetky hranice (hodnoty <code class="docutils literal notranslate"><span class="pre">90</span></code>, <code class="docutils literal notranslate"><span class="pre">80</span></code>, <code class="docutils literal notranslate"><span class="pre">70</span></code>, …) a pri prvej, ktorá vyhovuje (<code class="docutils literal notranslate"><span class="pre">body</span> <span class="pre">&gt;=</span> <span class="pre">hranica</span></code>), sa z cyklu vyskakuje. V tom prípade bude v premennej cyklu <code class="docutils literal notranslate"><span class="pre">znamka</span></code> zodpovedajúce hodnotenie. Všimnite si, že v cykle pre známku <code class="docutils literal notranslate"><span class="pre">F</span></code> vyjde hranica <code class="docutils literal notranslate"><span class="pre">40</span></code>. To znamená, že pre <code class="docutils literal notranslate"><span class="pre">body</span></code> od <code class="docutils literal notranslate"><span class="pre">40</span></code> do <code class="docutils literal notranslate"><span class="pre">49</span></code> sa vyskočí z cyklu (pomocou <code class="docutils literal notranslate"><span class="pre">break</span></code>) s hodnotou <code class="docutils literal notranslate"><span class="pre">F</span></code> v premennej <code class="docutils literal notranslate"><span class="pre">znamka</span></code> a pre <code class="docutils literal notranslate"><span class="pre">body</span></code> menšie ako <code class="docutils literal notranslate"><span class="pre">40</span></code> cyklus normálne skončí a v premennej <code class="docutils literal notranslate"><span class="pre">znamka</span></code> bude stále hodnota <code class="docutils literal notranslate"><span class="pre">F</span></code>.</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+</section>
+<section id="podmieneny-cyklus">
+<h2><a class="toc-backref" href="https://python.input.sk/1/04.html#id9" role="doc-backlink">Podmienený cyklus</a><a class="headerlink" href="https://python.input.sk/1/04.html#podmieneny-cyklus" title="Link to this heading">¶</a></h2>
+<p>V Pythone existuje konštrukcia cyklu, ktorá opakuje vykonávanie postupnosti príkazov v závislosti od nejakej podmienky:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">while</span> <span class="n">podmienka</span><span class="p">:</span>              <span class="c1"># opakuj príkazy, kým platí podmienka</span>
+</span>    <span class="n">prikaz</span>
+    <span class="n">prikaz</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>Vidíme podobnosť s podmieneným príkazom <code class="docutils literal notranslate"><span class="pre">if</span></code> - vetvením. Tento nový príkaz postupne:</p>
+<ul class="simple">
+<li><p>zistí hodnotu podmienky, ktorá je zapísaná za slovom <code class="docutils literal notranslate"><span class="pre">while</span></code></p></li>
+<li><p>ak má táto podmienka hodnotu <code class="docutils literal notranslate"><span class="pre">False</span></code>, blok príkazov, ktorý je telom cyklu, sa preskočí a pokračuje sa na nasledovnom príkaze za celým while-cyklom (podobne ako v príkaze <code class="docutils literal notranslate"><span class="pre">if</span></code> bez vetvy <code class="docutils literal notranslate"><span class="pre">else</span></code>), hovoríme, že sa ukončilo vykonávanie cyklu</p></li>
+<li><p>ak má podmienka hodnotu <code class="docutils literal notranslate"><span class="pre">True</span></code>, <strong>vykonajú sa všetky príkazy</strong> v tele cyklu (v odsunutom bloku príkazov)</p></li>
+<li><p>a znovu sa testuje podmienka za slovom <code class="docutils literal notranslate"><span class="pre">while</span></code>, t.j. celé sa to opakuje</p></li>
+</ul>
+<p>Najprv zapíšeme pomocou tohto cyklu, to čo už vieme pomocou for-cyklu:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Vypíše tabuľku druhých mocnín čísel od 1 do 20. Prepis na cyklus <code class="docutils literal notranslate"><span class="pre">while</span></code> znamená, že zostavíme podmienku, ktorá bude testovať, napríklad premennú <code class="docutils literal notranslate"><span class="pre">i</span></code>: tá nesmie byť väčšia ako 20. Samozrejme, že už pred prvou kontrolou premennej <code class="docutils literal notranslate"><span class="pre">i</span></code> v podmienke cyklu <code class="docutils literal notranslate"><span class="pre">while</span></code>, musí mať nejakú hodnotu:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="hll"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">21</span><span class="p">:</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>V cykle sa vykoná <code class="docutils literal notranslate"><span class="pre">print()</span></code> a zvýši sa hodnota premennej <code class="docutils literal notranslate"><span class="pre">i</span></code> o jedna.</p>
+<p><code class="docutils literal notranslate"><span class="pre">while</span></code>-cykly sa ale častejšie používajú vtedy, keď zápis pomocou <code class="docutils literal notranslate"><span class="pre">for</span></code>-cyklu je príliš komplikovaný, alebo sa ani urobiť nedá.</p>
+<p>Ukážeme to na programe, ktorý bude do jedného radu tesne vedľa seba kresliť stále sa zväčšujúce štvorce postupne so stranami 10, 20, 30, … Pritom bude dávať pozor, aby naposledy nakreslený štvorec „nevypadol“ z plochy - teda chceme skončiť skôr, ako by sme nakreslili štvorec, ktorý sa už celý nezmestí do grafickej plochy. Štvorce so stranou <code class="docutils literal notranslate"><span class="pre">a</span></code> budeme kresliť takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">canvas</span><span class="o">.</span><span class="n">create_rectangle</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">a</span><span class="p">,</span> <span class="mi">200</span> <span class="o">-</span> <span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>vďaka čomu, všetky ležia na jednej priamke (<code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">200</span></code>). Keď teraz budeme posúvať x-ovú súradnicu vždy o veľkosť nakresleného štvorca, ďalší bude ležať tesne vedľa neho.</p>
+<p>Program pomocou while-cyklu zapíšeme takto:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span>
+
+<span class="n">sirka</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'šírka plochy: '</span><span class="p">))</span>
+
+<span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="n">sirka</span><span class="p">)</span>
+<span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="hll"><span class="k">while</span> <span class="n">x</span> <span class="o">+</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">sirka</span><span class="p">:</span>
+</span>    <span class="n">canvas</span><span class="o">.</span><span class="n">create_rectangle</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">a</span><span class="p">,</span> <span class="mi">200</span> <span class="o">-</span> <span class="n">a</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="s1">'white'</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">+=</span> <span class="n">a</span>
+    <span class="n">a</span> <span class="o">+=</span> <span class="mi">10</span>
+<span class="c1"># príkazy za cyklom</span>
+
+<span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Program pracuje korektne pre rôzne šírky grafickej plochy. Ak zväčšovanie strany štvorca <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">+=</span> <span class="pre">10</span></code> nahradíme <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">=</span> <span class="pre">2</span> <span class="pre">*</span> <span class="pre">a</span></code>, program bude pracovať aj s takto zväčšovanými štvorcami (strany budú postupne 10, 20, 40, 80, …).</p>
+<p>Zhrňme, ako funguje tento typ cyklu:</p>
+<ol class="arabic simple">
+<li><p>vyhodnotí sa podmienka <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span> <span class="pre">a</span> <span class="pre">&lt;</span> <span class="pre">sirka</span></code>, t.j. pravý okraj štvorca, ktorý práve chceme nakresliť, sa ešte celý zmestí do grafickej plochy</p></li>
+<li><p>ak je podmienka splnená (pravdivá), postupne sa vykonajú všetky príkazy, t.j. nakreslí sa ďalší štvorec so stranou <code class="docutils literal notranslate"><span class="pre">a</span></code> a potom sa posunie <code class="docutils literal notranslate"><span class="pre">x</span></code> (ľavý okraj budúceho štvorca) o veľkosť práve nakresleného štvorca <code class="docutils literal notranslate"><span class="pre">a</span></code> a tiež sa ešte zmení veľkosť budúceho štvorca <code class="docutils literal notranslate"><span class="pre">a</span></code> o 10</p></li>
+<li><p>po vykonaní tela cyklu sa pokračuje v 1. kroku, t.j. opäť sa vyhodnotí podmienka</p></li>
+<li><p>ak podmienka nie je splnená (nepravda), cyklus končí a ďalej sa pokračuje v príkazoch za cyklom</p></li>
+</ol>
+<p>Uvedomte si, že podmienka nehovorí, kedy má cyklus skončiť, ale naopak - kým podmienka platí, vykonávajú sa všetky príkazy v tele cyklu. Teda, tento while-cyklus skončí vtedy, keď už podmienka platiť nebude, t.j. naplatí <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span> <span class="pre">a</span> <span class="pre">&lt;</span> <span class="pre">sirka</span></code>, čo je to isté ako <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span> <span class="pre">a</span> <span class="pre">&gt;=</span> <span class="pre">sirka</span></code>.</p>
+<p>Pre šírku grafickej plochy 300 dostávame takýto obrázok:</p>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_09.png"><img alt="../_images/104_09.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_09.png" style="width: 228.0px; height: 201.0px;">
+</a>
+<p>Konkrétne tento program s while-cyklom vieme jednoducho prepísať pomocou for-cyklu a <code class="docutils literal notranslate"><span class="pre">break</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span>
+
+<span class="n">sirka</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'šírka plochy: '</span><span class="p">))</span>
+
+<span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="n">sirka</span><span class="p">)</span>
+<span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="hll"><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">sirka</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+</span><span class="hll">    <span class="k">if</span> <span class="n">x</span> <span class="o">+</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">sirka</span><span class="p">:</span>
+</span><span class="hll">        <span class="k">break</span>
+</span>    <span class="n">canvas</span><span class="o">.</span><span class="n">create_rectangle</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">a</span><span class="p">,</span> <span class="mi">200</span> <span class="o">-</span> <span class="n">a</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="s1">'white'</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">+=</span> <span class="n">a</span>
+
+<span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Vyššie sme zostavili program, ktorý zisťoval, či je zadané číslo prvočíslo. Použili sme for-cyklus, v ktorom sme zadané číslo postupne delili všetkými číslami, ktoré sú menšie ako samotné číslo. Zistili sme, že na zisťovanie prvočísla nepotrebujeme skutočný počet deliteľov, ale malo by nám stačiť zistenie, či existuje aspoň jeden deliteľ. Keď sa vyskytne prvý deliteľ (t.j. platí <code class="docutils literal notranslate"><span class="pre">cislo</span> <span class="pre">%</span> <span class="pre">delitel</span> <span class="pre">!=</span> <span class="pre">0</span></code>), cyklus môžeme ukončiť a vyhlásiť, že číslo nie je prvočíslo. Ak ani jedno číslo nie je deliteľom nášho čísla, hodnota premennej <code class="docutils literal notranslate"><span class="pre">delitel</span></code> dosiahne <code class="docutils literal notranslate"><span class="pre">cislo</span></code> a to je situácia, keď cyklus tiež skončí (t.j. keď <code class="docutils literal notranslate"><span class="pre">delitel</span> <span class="pre">==</span> <span class="pre">cislo</span></code>, našli sme prvočíslo). Zapíšeme to while-cyklom:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">je_prvocislo</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+    <span class="n">delitel</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="hll">    <span class="k">while</span> <span class="n">delitel</span> <span class="o">&lt;</span> <span class="n">cislo</span> <span class="ow">and</span> <span class="n">cislo</span> <span class="o">%</span> <span class="n">delitel</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span>        <span class="n">delitel</span> <span class="o">=</span> <span class="n">delitel</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="hll">    <span class="k">return</span> <span class="n">delitel</span> <span class="o">==</span> <span class="n">cislo</span>
+</span></pre></div>
+</div>
+<p>Do podmienky while-cyklu sme pridali novú časť. Operátor <code class="docutils literal notranslate"><span class="pre">and</span></code> tu má ten význam, že na to, aby sa cyklus opakoval, musia byť splnené obe časti. Uvedomte si, že <strong>cyklus skončí vtedy</strong>, keď prestane platiť zadaná podmienka, t.j. <strong>negácia podmienky</strong> (matematicky to upravíme):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">(delitel</span> <span class="pre">&lt;</span> <span class="pre">cislo</span> <span class="pre">and</span> <span class="pre">cislo</span> <span class="pre">%</span> <span class="pre">delitel</span> <span class="pre">!=</span> <span class="pre">0)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">delitel</span> <span class="pre">&lt;</span> <span class="pre">cislo</span> <span class="pre">or</span> <span class="pre">not</span> <span class="pre">cislo</span> <span class="pre">%</span> <span class="pre">delitel</span> <span class="pre">!=</span> <span class="pre">0</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">delitel</span> <span class="pre">&gt;=</span> <span class="pre">cislo</span> <span class="pre">or</span> <span class="pre">cislo</span> <span class="pre">%</span> <span class="pre">delitel</span> <span class="pre">==</span> <span class="pre">0</span></code></p></li>
+</ul>
+<p>while-cyklus teda skončí vtedy, keď <code class="docutils literal notranslate"><span class="pre">delitel</span> <span class="pre">&gt;=</span> <span class="pre">cislo</span></code>, <strong>alebo</strong> <code class="docutils literal notranslate"><span class="pre">cislo</span> <span class="pre">%</span> <span class="pre">delitel</span> <span class="pre">==</span> <span class="pre">0</span></code> (teda, že deliteľ by bol už zbytočne veľký alebo našli sme hodnotu, ktorá delí naše číslo).</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<h2 class="rubric">Nekonečný cyklus</h2>
+<p>Cyklus s podmienkou, ktorá má stále hodnotu <code class="docutils literal notranslate"><span class="pre">True</span></code>, bude nekonečný. Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="hll"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+</span>    <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Nikdy neskončí, lebo premenná <code class="docutils literal notranslate"><span class="pre">i</span></code> bude stále menšia ako 10. Takéto výpočty môžeme prerušiť stlačením klávesov <kbd class="kbd docutils literal notranslate">Ctrl/C</kbd>.</p>
+<p>Aj nasledovný cyklus je úmyselne nekonečný:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
+</span>    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Pripomíname, že príkaz <code class="docutils literal notranslate"><span class="pre">pass</span></code> je <strong>prázdny príkaz</strong>, ktorý nerobí nič. V tomto príklade <code class="docutils literal notranslate"><span class="pre">pass</span></code> označuje prázdne telo cyklu, a teda tento cyklus bude nikdy nekončiaci.</p>
+<h2 class="rubric">Ďalšie príklady</h2>
+<p>Už vieme, že príkaz <code class="docutils literal notranslate"><span class="pre">break</span></code> môžeme použiť v tele for-cyklu a vtedy sa zvyšok cyklu nevykoná. Nasledovný príklad ilustruje použitie <code class="docutils literal notranslate"><span class="pre">break</span></code> aj vo while-cykle:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sucet</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="hll"><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span>    <span class="n">retazec</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'zadaj číslo: '</span><span class="p">)</span>
+<span class="hll">    <span class="k">if</span> <span class="n">retazec</span> <span class="o">==</span> <span class="s1">''</span><span class="p">:</span>
+</span><span class="hll">        <span class="k">break</span>
+</span>    <span class="n">sucet</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">retazec</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'súčet prečítaných čísel ='</span><span class="p">,</span> <span class="n">sucet</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>V tomto príklade sa čítajú čísla zo vstupu, kým nezadáme prázdny reťazec: vtedy cyklus končí a program vypíše súčet prečítaných čísel. Napríklad:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>zadaj číslo: 5
+zadaj číslo: 17
+zadaj číslo: 2
+zadaj číslo:
+súčet prečítaných čísel = 24
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<p>Funkcia <code class="docutils literal notranslate"><span class="pre">parne(n)</span></code> zistí, či je <code class="docutils literal notranslate"><span class="pre">n</span></code> párne číslo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">parne</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<p>Skúsenejší programátori preferujú takýto zápis tejto funkcie (my ho tiež odporúčame):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">parne</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<p>Python nekontroluje typy parametrov, ale kontroluje, čo sa s nimi robí vo funkcii. Napríklad funkcia:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">pocitaj</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span>    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>bude fungovať pre čísla, ale pre reťazec spadne:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pocitaj</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="hll"><span class="go">    11</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">pocitaj</span><span class="p">(</span><span class="s1">'a'</span><span class="p">)</span>
+<span class="hll"><span class="go">    ...</span>
+</span><span class="hll"><span class="go">    TypeError: Can't convert 'int' object to str implicitly</span>
+</span></pre></div>
+</div>
+<p>V tele funkcie ale môžeme kontrolovať typ parametra, napríklad takto:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">pocitaj</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="hll">    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span><span class="p">:</span>
+</span>        <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="s1">'1'</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>a potom takéto volanie vráti:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pocitaj</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="hll"><span class="go">    11</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">pocitaj</span><span class="p">(</span><span class="s1">'a'</span><span class="p">)</span>
+<span class="hll"><span class="go">    'aa1'</span>
+</span></pre></div>
+</div>
+<p>Neskôr sa naučíme testovať typ nejakých hodnôt správnejším spôsobom, ale zatiaľ nám bude stačiť, keď to budeme riešiť takto jednoducho.</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<p>Programátori veľmi obľubujú štandardné funkcie <code class="docutils literal notranslate"><span class="pre">min</span></code> a <code class="docutils literal notranslate"><span class="pre">max</span></code>, ktoré vrátia minimálny, resp. maximálnu hodnotu z dvoch daných hodnôt. Zapíšme tieto dve funkcie s použitím príkazu <code class="docutils literal notranslate"><span class="pre">if</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">min</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">a</span>
+    <span class="k">return</span> <span class="n">b</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">max</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">a</span>
+    <span class="k">return</span> <span class="n">b</span>
+</pre></div>
+</div>
+<p>Vďaka definícii týchto dvoch funkcií, nemôžeme ďalej v tomto programe používať <strong>štandardné funkcie</strong> <code class="docutils literal notranslate"><span class="pre">min</span></code> a <code class="docutils literal notranslate"><span class="pre">max</span></code>. Hovoríme, že sme ich prekryli novými definíciami. Ak by sme teraz chceli vytvoriť funkciu <code class="docutils literal notranslate"><span class="pre">min</span></code>, ktorá ale zistí minimum troch čísel, nebude fungovať:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">min</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span> <span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>lebo sme opäť prekryli našu pôvodnú funkciu <code class="docutils literal notranslate"><span class="pre">min</span></code> novšou verziou. Mohli by sme to zapísať, napríklad takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">min2</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">a</span>
+    <span class="k">return</span> <span class="n">b</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">min</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">min2</span><span class="p">(</span><span class="n">min2</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span> <span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<p>Už v druhej prednáške sme počítali <a class="reference external" href="https://sk.wikipedia.org/wiki/Faktori%C3%A1l">faktoriál</a> pomocou for-cyklu a zapísali sme to do funkcie:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">faktorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">vysl</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">vysl</span> <span class="o">*=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">vysl</span>
+</pre></div>
+</div>
+<p>Z tréningových dôvodov to môžeme zapísať aj pomocou while-cyklu:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">faktorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">vysl</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">vysl</span> <span class="o">*=</span> <span class="n">n</span>
+        <span class="n">n</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">vysl</span>
+</pre></div>
+</div>
+<p>Opäť vidíte, že sme tu použili parameter <code class="docutils literal notranslate"><span class="pre">n</span></code> ako lokálnu premennú.</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<section id="najvacsi-spolocny-delitel">
+<h3><a class="toc-backref" href="https://python.input.sk/1/04.html#id10" role="doc-backlink">Najväčší spoločný deliteľ</a><a class="headerlink" href="https://python.input.sk/1/04.html#najvacsi-spolocny-delitel" title="Link to this heading">¶</a></h3>
+<p>Zapíšeme funkciu <code class="docutils literal notranslate"><span class="pre">nsd(a,</span> <span class="pre">b)</span></code>, ktorá počíta <a class="reference external" href="https://sk.wikipedia.org/wiki/Najv%C3%A4%C4%8D%C5%A1%C3%AD_spolo%C4%8Dn%C3%BD_delite%C4%BE">najväčší spoločný deliteľ</a> dvoch čísel. Použijeme tzv. <a class="reference external" href="https://sk.wikipedia.org/wiki/Euklidov_algoritmus">Euklidov algoritmus</a>, ktorý už pred vyše 2 tisíc rokmi popísal starogrécky matematik <strong>Euklides</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">nsd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+            <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">-</span> <span class="n">a</span>
+<span class="hll">    <span class="k">return</span> <span class="n">a</span>
+</span></pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nsd</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
+<span class="hll"><span class="go">    6</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">nsd</span><span class="p">(</span><span class="mi">100000000</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="hll"><span class="go">    1</span>
+</span></pre></div>
+</div>
+<p>Iste ste si všimli, že volanie <code class="docutils literal notranslate"><span class="pre">nsd(100000000,</span> <span class="pre">1)</span></code> trvá niekoľko sekúnd. Zrejme preto, lebo while-cyklus <code class="docutils literal notranslate"><span class="pre">100000000</span></code>-krát odpočíta <code class="docutils literal notranslate"><span class="pre">1</span></code>. Pritom si stačí uvedomiť, že takýto cyklus:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</pre></div>
+</div>
+<p>pre kladné čísla <code class="docutils literal notranslate"><span class="pre">a</span></code> a <code class="docutils literal notranslate"><span class="pre">b</span></code> urobí to isté ako:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>
+</pre></div>
+</div>
+<p>teda zvyšok po delení. Funkciu <code class="docutils literal notranslate"><span class="pre">nsd</span></code> môžeme teraz výrazne vylepšiť:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">nsd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">b</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<span class="hll">        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>
+</span>    <span class="k">return</span> <span class="n">a</span>
+</pre></div>
+</div>
+<p>Odkrokujte tento algoritmus pomocou stránky <a class="reference external" href="http://www.pythontutor.com/visualize.html#mode=edit">http://www.pythontutor.com/visualize.html#mode=edit</a>.</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<div class="progress">
+<div class="progress-bar progress-bar" role="progressbar" style="width: 100%"></div>
+</div></section>
+</section>
+<section id="cvicenie">
+<h2><a class="toc-backref" href="https://python.input.sk/1/04.html#id11" role="doc-backlink">Cvičenie</a><a class="headerlink" href="https://python.input.sk/1/04.html#cvicenie" title="Link to this heading">¶</a></h2>
+<div class="danger admonition alert alert-danger alert-error">
+<p class="admonition-title">Poznámka</p>
+<ul>
+<li><p>riešenia úloh ulož do jedného súboru a odovzdaj na testovací server <a class="reference external" href="https://vektor.fmph.uniba.sk/courses/2025-2026-zima/programovanie-1/">https://vektor.fmph.uniba.sk/</a></p>
+<ul>
+<li><p>testovací server bude testovať úlohy označené znakom <kbd class="kbd docutils literal notranslate">#</kbd></p></li>
+<li><p>prvé tri riadky súboru s riešením musia obsahovať:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 4. cvicenie</span>
+<span class="c1"># student: Janko Hrasko</span>
+<span class="c1"># datum: 2.10.2025</span>
+</pre></div>
+</div>
+<p>zrejme ako študenta uvedieš svoje meno.</p>
+</li>
+</ul>
+</li>
+<li><p>používaj len konštrukcie z doterajších prednášok (žiadne zoznamy a reťazcové funkcie/metódy)</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic">
+<li><p><kbd class="kbd docutils literal notranslate">#</kbd> Športovec prvý deň prebehol <code class="docutils literal notranslate"><span class="pre">x</span></code> kilometrov. Každý ďalší deň prebehol o 10% viac ako v predchádzajúci deň. Napíš funkciu <code class="docutils literal notranslate"><span class="pre">sportovec(x,</span> <span class="pre">y)</span></code>, ktorá pre dané <code class="docutils literal notranslate"><span class="pre">y</span></code> zistí, v ktorý deň športovec prebehne aspoň <code class="docutils literal notranslate"><span class="pre">y</span></code> kilometrov. Funkcia vráti (<code class="docutils literal notranslate"><span class="pre">return</span></code>) reťazec s odpoveďou, desatinné číslo vlož do výsledku pomocou <code class="docutils literal notranslate"><span class="pre">{cislo:.2f}</span></code>. Napríklad, po spustení môžeš dostať:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">sportovec</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span>
+<span class="hll"><span class="go">    'na 9. deň prebehne 21.44 km'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">sportovec</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">121</span><span class="p">)</span>
+<span class="hll"><span class="go">    'na 3. deň prebehne 121.00 km'</span>
+</span></pre></div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="2">
+<li><p><kbd class="kbd docutils literal notranslate">#</kbd> Budeme konštruovať takúto postupnosť celých čísel:</p>
+<ul class="simple">
+<li><p>začneme zadaným číslom <code class="docutils literal notranslate"><span class="pre">n</span></code></p></li>
+<li><p>ak je párne, vydelíme ho <code class="docutils literal notranslate"><span class="pre">2</span></code></p></li>
+<li><p>inak sa vynásobí <code class="docutils literal notranslate"><span class="pre">3</span></code> a pripočíta <code class="docutils literal notranslate"><span class="pre">1</span></code></p></li>
+<li><p>toto sa opakuje, kým nedostaneme číslo <code class="docutils literal notranslate"><span class="pre">1</span></code></p></li>
+</ul>
+<p>Napíš funkciu <code class="docutils literal notranslate"><span class="pre">postupnost(n)</span></code>, ktorá pre dané štartové číslo <code class="docutils literal notranslate"><span class="pre">n</span></code> vráti (<code class="docutils literal notranslate"><span class="pre">return</span></code>) takto skonštruovanú postupnosť. Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">postupnost</span><span class="p">(</span><span class="mi">44</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span>
+<span class="hll"><span class="go">    '44, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1'</span>
+</span></pre></div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="3">
+<li><p><kbd class="kbd docutils literal notranslate">#</kbd> Napíš funkciu <code class="docutils literal notranslate"><span class="pre">prvocinitele(cislo)</span></code>, ktorá zadané číslo ** rozloží na prvočinitele** (vyjadrí ho ako súčin prvočísel). Tento rozklad vrátiš ako reťazec v tvare rovnosti s násobením:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">prvocinitele</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span>
+<span class="hll"><span class="go">    '60 = 2 * 2 * 3 * 5'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">prvocinitele</span><span class="p">(</span><span class="mi">1001</span><span class="p">)</span>
+<span class="hll"><span class="go">    '1001 = 7 * 11 * 13'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">prvocinitele</span><span class="p">(</span><span class="mi">37</span><span class="p">)</span>
+<span class="hll"><span class="go">    '37 = 37'</span>
+</span></pre></div>
+</div>
+<p>V programe bude while-cyklus, v ktorom budeš postupne skúšať deliť zadané číslo rôznymi deliteľmi: ak je číslo týmto deliteľom deliteľné, tak ho vypíšeš a samotné číslo vydelíš týmto deliteľom, inak deliteľ zvýšiš o 1 a celé sa to opakuje.</p>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="4">
+<li><p><kbd class="kbd docutils literal notranslate">#</kbd> Napíš funkciu <code class="docutils literal notranslate"><span class="pre">cifry10(cislo)</span></code>, ktorá vráti cifry zadaného čísla postupným delením desiatimi, teda vo while-cykle do výsledku pridá poslednú cifru (<code class="docutils literal notranslate"><span class="pre">cislo</span> <span class="pre">%</span> <span class="pre">10</span></code>) a pritom ešte samotné číslo vydelí 10. Môžeš dostať takýto výstup:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">cifry10</span><span class="p">(</span><span class="mi">4132</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span>
+<span class="hll"><span class="go">    '2 3 1 4'</span>
+</span></pre></div>
+</div>
+<p>Všimni si, že cifry čísla sú v opačnom poradí ako sú v zadanom čísle.</p>
+<p>Teraz napíš všeobecnejší variant tejto funkcie: <code class="docutils literal notranslate"><span class="pre">cifry(cislo,</span> <span class="pre">sustava=10)</span></code>, ktorá vráti cifry dadého čísla, ale teraz už v normálnom poradí, pričom parameter <code class="docutils literal notranslate"><span class="pre">sustava</span></code> určuje číslenú sústavu (číslo z intervalu <code class="docutils literal notranslate"><span class="pre">&lt;2,</span> <span class="pre">10&gt;</span></code>), pre ktorú sa vytvárajú tieto cifry. Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cifry</span><span class="p">(</span><span class="mi">4132</span><span class="p">)</span>
+<span class="hll"><span class="go">    '4132'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">cifry</span><span class="p">(</span><span class="mi">4132</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+<span class="hll"><span class="go">    '10044'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">cifry</span><span class="p">(</span><span class="mi">4132</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="hll"><span class="go">    '113012'</span>
+</span></pre></div>
+</div>
+<p>Pre niektoré číslené sústavy vieme vytvoriť reťazec s ciframi v tejto sústave, napríklad</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="mi">4132</span><span class="si">:</span><span class="s1">b</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="mi">4132</span><span class="si">:</span><span class="s1">o</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="mi">4132</span><span class="si">:</span><span class="s1">x</span><span class="si">}</span><span class="s1">'</span>
+<span class="hll"><span class="go">    '1000000100100 10044 1024'</span>
+</span></pre></div>
+</div>
+<p>Takto dostávame číslo <code class="docutils literal notranslate"><span class="pre">4132</span></code> v dvojkovej, osmičkovej a šestnástkovej sústave (16-ovú sústavu sme v tejto úlohe nevytvárali).</p>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="5">
+<li><p><kbd class="kbd docutils literal notranslate">#</kbd> Napš funkciu <code class="docutils literal notranslate"><span class="pre">sucet(retazec,</span> <span class="pre">sustava=10)</span></code>, krorá dostáva znakový reťazec s celými číslami oddelenými znakom <code class="docutils literal notranslate"><span class="pre">','</span></code>. Funkcia rozoberie tento reťazec (pomocou for-cyklu) na cifry, poskladá z nich číslo v zadanej číselnej sústave (napríklad pomocou <code class="docutils literal notranslate"><span class="pre">int('1234',</span> <span class="pre">5)</span></code>) a všetky tieto čísla sčíta. Funkcia vráti (<code class="docutils literal notranslate"><span class="pre">return</span></code>) celé číslo. Napríklad</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sucet</span><span class="p">(</span><span class="s1">'11,247,3'</span><span class="p">)</span>
+<span class="hll"><span class="go">    261</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">sucet</span><span class="p">(</span><span class="s1">'11,247,3'</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+<span class="hll"><span class="go">    179</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">sucet</span><span class="p">(</span><span class="s1">'1111111111,-11000'</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="hll"><span class="go">    999</span>
+</span></pre></div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="6">
+<li><p><kbd class="kbd docutils literal notranslate">#</kbd> Napíš funkciu <code class="docutils literal notranslate"><span class="pre">poradie(a,</span> <span class="pre">b,</span> <span class="pre">c)</span></code>, ktorá dostáva tri celá čísla a vráti ich v tvare znakového reťazca, v ktorom budú tieto čísla usporiadané od najmenšieho po najväčšie, medzi číslami bude <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">&lt;=</span> <span class="pre">'</span></code> Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">poradie</span><span class="p">(</span><span class="mi">42</span><span class="p">,</span> <span class="mi">171</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>
+<span class="hll"><span class="go">    '28 &lt;= 42 &lt;= 171'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">poradie</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="hll"><span class="go">    '2 &lt;= 7 &lt;= 7'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">poradie</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<span class="hll"><span class="go">    '11 &lt;= 13 &lt;= 15'</span>
+</span></pre></div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="7">
+<li><p>Budem hrať takúto hru: kladiem vedľa seba do radu mince s náhodnými hodnotami z <code class="docutils literal notranslate"><span class="pre">&lt;1,</span> <span class="pre">4&gt;</span></code>; skončím, keď ich súčet bude väčší alebo rovný danému parametru <code class="docutils literal notranslate"><span class="pre">hranica</span></code>. Ak skončil so súčtom, ktorý je rovný <code class="docutils literal notranslate"><span class="pre">hranica</span></code>, vypíše text <code class="docutils literal notranslate"><span class="pre">'HURÁ'</span></code> inak <code class="docutils literal notranslate"><span class="pre">'ŠKODA'</span></code>. Napíš funkciu <code class="docutils literal notranslate"><span class="pre">hra(n,</span> <span class="pre">hranica=21)</span></code>, ktorý túto hru odsimuluje <code class="docutils literal notranslate"><span class="pre">n</span></code>-krát a vypíše to pod seba, napríklad pre <code class="docutils literal notranslate"><span class="pre">hra(10,</span> <span class="pre">21)</span></code> môžeš dostať takýto výpis:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">4</span> <span class="mi">4</span> <span class="mi">4</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">3</span> <span class="o">...</span> <span class="n">ŠKODA</span>
+<span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">3</span> <span class="mi">4</span> <span class="o">...</span> <span class="n">HURA</span>
+<span class="mi">4</span> <span class="mi">4</span> <span class="mi">4</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">3</span> <span class="mi">2</span> <span class="mi">3</span> <span class="o">...</span> <span class="n">ŠKODA</span>
+<span class="mi">3</span> <span class="mi">4</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">4</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">4</span> <span class="o">...</span> <span class="n">ŠKODA</span>
+<span class="mi">3</span> <span class="mi">1</span> <span class="mi">3</span> <span class="mi">3</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">3</span> <span class="mi">3</span> <span class="o">...</span> <span class="n">ŠKODA</span>
+<span class="mi">3</span> <span class="mi">4</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">3</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">2</span> <span class="o">...</span> <span class="n">ŠKODA</span>
+<span class="mi">4</span> <span class="mi">3</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">4</span> <span class="mi">1</span> <span class="mi">4</span> <span class="mi">3</span> <span class="o">...</span> <span class="n">ŠKODA</span>
+<span class="mi">4</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">4</span> <span class="mi">1</span> <span class="o">...</span> <span class="n">HURA</span>
+<span class="mi">3</span> <span class="mi">3</span> <span class="mi">2</span> <span class="mi">4</span> <span class="mi">1</span> <span class="mi">4</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">4</span> <span class="o">...</span> <span class="n">ŠKODA</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="8">
+<li><p>Nasledovná funkcia vykresľuje farebné krúžky v štvorcovej sieti <code class="docutils literal notranslate"><span class="pre">n</span></code> x <code class="docutils literal notranslate"><span class="pre">n</span></code> a zafarbuje ich podľa podmienky v príkaze <code class="docutils literal notranslate"><span class="pre">if</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">stvorcova_siet</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">()</span>
+    <span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">j</span> <span class="o">*</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">100</span>
+            <span class="n">y</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">12</span>
+<span class="hll">            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+</span>                <span class="n">farba</span> <span class="o">=</span> <span class="s1">'red'</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">farba</span> <span class="o">=</span> <span class="s1">'white'</span>
+            <span class="n">canvas</span><span class="o">.</span><span class="n">create_oval</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">8</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">8</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">8</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">8</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">farba</span><span class="p">)</span>
+
+    <span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+
+<span class="n">stvorcova_siet</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>A.</strong> Zmeň <strong>iba túto podmienku</strong> tak, aby sa nakreslil obrázok, v ktorom sa zafarbí stredný rad a stredný stĺpec (v programe nemeň iné príkazy, nepridávaj ďalšie):</p>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_c01.png"><img alt="../_images/104_c01.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_c01.png" style="width: 192.0px; height: 135.5px;">
+</a>
+<p><strong>B.</strong> Zmeň <strong>iba túto podmienku</strong> tak, aby sa nakreslil obrázok, v ktorom sa zafarbia obe uhlopriečky:</p>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_c02.png"><img alt="../_images/104_c02.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_c02.png" style="width: 192.0px; height: 135.5px;">
+</a>
+<p>Obe verzie programu by mali fungovať správne aj pri zmenenom rozmere <code class="docutils literal notranslate"><span class="pre">n</span></code>. Vyskúšaj napríklad <code class="docutils literal notranslate"><span class="pre">n=10</span></code>. Pre párne <code class="docutils literal notranslate"><span class="pre">n</span></code> si môžeš zvoliť ľubovoľnú inerpretáciu križovania radov a stĺpcov farebných bodiek.</p>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="9">
+<li><p>Napíš funkciu <code class="docutils literal notranslate"><span class="pre">platna(x,</span> <span class="pre">y,</span> <span class="pre">r,</span> <span class="pre">k)</span></code>, ktorá nakreslí gramofónovú LP platňu ako niekoľko sústredných kružníc. Najväčšia z nich má polomer <code class="docutils literal notranslate"><span class="pre">r</span></code> a každá ďalšia je o <code class="docutils literal notranslate"><span class="pre">3</span></code> menšia. Najmenšia kružnica by nemala mať menší polomer ako <code class="docutils literal notranslate"><span class="pre">15</span></code>. Každú <code class="docutils literal notranslate"><span class="pre">k</span></code>-tu kružnicu nakresli šedou farbou (začni od najväčšej). Napríklad pre volanie <code class="docutils literal notranslate"><span class="pre">platna(190,</span> <span class="pre">130,</span> <span class="pre">120,</span> <span class="pre">6)</span></code> by si mal dostať takýto obrázok:</p>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_c03.png"><img alt="../_images/104_c03.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_c03.png" style="width: 192.0px; height: 135.5px;">
+</a>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="10">
+<li><p>Využi program z prednášky, v ktorom sa vykresľovalo 1000 farebných bodiek (malé krúžky s polomerom 5 bez obrysu) podľa toho či mali <code class="docutils literal notranslate"><span class="pre">x</span></code>-ovú, alebo <code class="docutils literal notranslate"><span class="pre">y</span></code>-ovú súradnicu menšiu alebo väčšiu ako <code class="docutils literal notranslate"><span class="pre">150</span></code>. Veľkosť grafickej plochy bola 300x300. Zmeň v tomto programe sériu príkazov <code class="docutils literal notranslate"><span class="pre">if</span></code> tak, aby kreslené bodky vytvorili vnútorný červený štvorec s rozmermi 150x150. Funkcia <code class="docutils literal notranslate"><span class="pre">stvorce(n=4000)</span></code> vykresli <code class="docutils literal notranslate"><span class="pre">4000</span></code> farebných bodiek:</p>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_c04.png"><img alt="../_images/104_c04.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_c04.png" style="width: 153.0px; height: 152.5px;">
+</a>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="13">
+<li><p>Podobná úloha ako v predchádzajúcom príklade, len v tomto sa využívajú uhlopriečky štvorca. Asi tu budeš vedieť využiť podmienky <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">y</span></code> alebo <code class="docutils literal notranslate"><span class="pre">300</span> <span class="pre">-</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">y</span></code>. Funkcia <code class="docutils literal notranslate"><span class="pre">uhlopriecky(n=4000)</span></code> vykresli <code class="docutils literal notranslate"><span class="pre">4000</span></code> farebných bodiek:</p>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_c05.png"><img alt="../_images/104_c05.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/104_c05.png" style="width: 153.0px; height: 152.5px;">
+</a>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<div class="progress">
+<div class="progress-bar progress-bar" role="progressbar" style="width: 100%"></div>
+</div></section>
+<section id="tyzdenny-projekt">
+<h2><a class="toc-backref" href="https://python.input.sk/1/04.html#id12" role="doc-backlink">2. Týždenný projekt</a><a class="headerlink" href="https://python.input.sk/1/04.html#tyzdenny-projekt" title="Link to this heading">¶</a></h2>
+<div class="danger admonition alert alert-danger alert-error">
+<p class="admonition-title">Poznámka</p>
+<ul>
+<li><p>riešenie úlohy ulož do textového súboru s príponou <code class="docutils literal notranslate"><span class="pre">.py</span></code> a odovzdaj na testovací server <a class="reference external" href="https://vektor.fmph.uniba.sk/courses/2025-2026-zima/programovanie-1/">https://vektor.fmph.uniba.sk/</a> najneskôr 19.októbra do 18:00.</p>
+<ul>
+<li><p>prvé tri riadky súboru s riešením musia obsahovať:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2. tyzdenny projekt</span>
+<span class="c1"># student: Janko Hrasko</span>
+<span class="c1"># datum: 5.10.2025</span>
+</pre></div>
+</div>
+<p>zrejme ako študenta uvedieš svoje meno, dátum uprav podľa dátumu odovzdania</p>
+</li>
+</ul>
+</li>
+<li><p>používaj len konštrukcie z doterajších prednášok (nepoužívaj žiadne hranaté zátvorky ani funkcie s reťazcami, ktoré sme sa ešte v prvých štyroch prednáškach neučili)</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<p>Napíš pythonovský skript s funkciou <code class="docutils literal notranslate"><span class="pre">pyramida(ret1,</span> <span class="pre">ret2)</span></code>. Oba parametre sú znakové reťazce a obsahujú informácie pre nakreslenie obrázka pomocou <code class="docutils literal notranslate"><span class="pre">tkinter</span></code>. Prvý reťazec obsahuje 3 celé čísla oddelené čiarkou <code class="docutils literal notranslate"><span class="pre">,</span></code> (medzera sa bude ignorovať): <code class="docutils literal notranslate"><span class="pre">n,</span> <span class="pre">sirka,</span> <span class="pre">vyska</span></code>. Druhý reťazec obsahuje tri mená farieb tiež oddelené čiarkou <code class="docutils literal notranslate"><span class="pre">,</span></code>. Funkcia do grafickej plochy nakreslí pyramídu zloženú z farebných obdĺžnikov veľkosti <code class="docutils literal notranslate"><span class="pre">(sirka,</span> <span class="pre">vyska)</span></code> (pomocou <code class="docutils literal notranslate"><span class="pre">create_rectangle()</span></code>). Pyramída sa skladá z <code class="docutils literal notranslate"><span class="pre">n</span></code> poschodí: na vrchu pyramídy je jeden obdĺžnik, pod ním sú dva odsunuté vľavo o polovicu šírky, pod nimi sú tri opäť odsunuté vľavo, atď. Tieto obdĺžniky budú zafarbené tromi farbami tak, že žiadne dva, ktoré sa dotýkajú, nemajú rovnakú farbu. Tieto tri farby obdĺžnikov sú zadefinované v druhom parametri <code class="docutils literal notranslate"><span class="pre">ret2</span></code>.</p>
+<p>Napríklad, pre volanie <code class="docutils literal notranslate"><span class="pre">pyramida('4,</span> <span class="pre">50,</span> <span class="pre">20',</span> <span class="pre">'green,</span> <span class="pre">blue,</span> <span class="pre">maroon')</span></code> môžeš dostať takýto obrázok:</p>
+<a class="reference internal image-reference" href="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/zp2_01.png"><img alt="../_images/zp2_01.png" class="align-center" src="./4. Podmienené príkazy — Dokumentácia Programovanie v Pythone_files/zp2_01.png" style="width: 262.5px; height: 171.0px;">
+</a>
+<p>V tvojom riešení nepoužívaj žiaden iný modul okrem <code class="docutils literal notranslate"><span class="pre">tkinter</span></code>. Z Pythonu používaj len príkazy z prvých štyroch prednášok. Do grafického plátna (<code class="docutils literal notranslate"><span class="pre">canvas</span></code>) kresli len pomocou <code class="docutils literal notranslate"><span class="pre">create_rectangle</span></code>, do ktorého pošleš 4 čísla ako súradnice dvoch bodov a pomenovaný parameter <code class="docutils literal notranslate"><span class="pre">fill</span></code>. Je jedno, kde v plátne umiestniš nakreslenú pyramídu, môžeš predpokladať, že testovač má neobmedzené rozmery plochy. Bolo by dobre, keby si vykreslil všetky obdĺžniky v takom poradí, že najprv sú všetky jednej farby, až potom všetky obdĺžniky nejake druhej farby a na záver všetky obdĺžniky zvyšnej farby.</p>
+<p>Niektoré testy testovača budú testovať len to, či sú obdĺžniky správne rozmiestnené, ďalšie či sú aj správne zafarbené a niektoré testy budú zisťovať aj to, v akom poradí budú farebné obdĺžniky vykresľované (najprv všetky jednou farbou, potom druhou a na koniec všetky ostatné).</p>
+<p>Keďže testovací systém <code class="docutils literal notranslate"><span class="pre">vektor</span></code> nevie pracovať s grafickými aplikáciami, tvoj skript by mohol mať takúto štruktúru:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2. tyzdenny projekt</span>
+<span class="c1"># student: Janko Hrasko</span>
+<span class="c1"># datum: 5.10.2025</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">tkinter1</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tkinter</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">pyramida</span><span class="p">(</span><span class="n">ret1</span><span class="p">,</span> <span class="n">ret2</span><span class="p">):</span>
+    <span class="o">...</span>
+    <span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
+    <span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+    <span class="o">...</span>
+    <span class="n">tkinter</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="n">pyramida</span><span class="p">(</span><span class="s1">'4, 50, 20'</span><span class="p">,</span> <span class="s1">'green, blue, maroon'</span><span class="p">)</span>    <span class="c1"># testovacie volanie funkcie</span>
+</pre></div>
+</div>
+<p>Pričom pre testovanie na tvojom počitači môže <code class="docutils literal notranslate"><span class="pre">tkinter1.py</span></code> vyzerať takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">tkinter</span><span class="w"> </span><span class="kn">import</span> <span class="n">Canvas</span><span class="p">,</span> <span class="n">mainloop</span>
+</pre></div>
+</div>
+<p>Súbor <code class="docutils literal notranslate"><span class="pre">tkinter1.py</span></code> by mal byť v tom istom priečinku ako tvoj skript, neposiela sa do testovača, lebo testovač ho aj tak má vo svojej verzii.</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="https://python.input.sk/1/04.html#">Back to top</a>
+      
+    </p>
+    <p>
+        © <a href="https://python.input.sk/copyright.html">Copyright</a> 2025, Andrej Blaho.<br>
+      Naposledy aktualizované 15. okt. 2025.<br>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.2.3.<br>
+    </p>
+  </div>
+</footer>
+  
+</body></html>

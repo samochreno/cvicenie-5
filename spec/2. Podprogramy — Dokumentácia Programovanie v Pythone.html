@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://python.input.sk/1/02.html#moduly-math-a-random -->
+<html lang="sk" data-content_root="../"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>2. Podprogramy — Dokumentácia Programovanie v Pythone </title>
+    <link rel="stylesheet" type="text/css" href="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/pygments.css">
+    <link rel="stylesheet" type="text/css" href="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/bootstrap-sphinx.css">
+    <script src="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/documentation_options.js"></script>
+    <script src="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/doctools.js"></script>
+    <script src="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/sphinx_highlight.js"></script>
+    <script src="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/translations.js"></script>
+    <link rel="icon" href="https://python.input.sk/_static/favicon.png">
+    <link rel="index" title="Index" href="https://python.input.sk/genindex.html">
+    <link rel="search" title="Hľadať" href="https://python.input.sk/search.html">
+    <link rel="copyright" title="Autorské právo" href="https://python.input.sk/copyright.html">
+    <link rel="next" title="3. Grafický režim" href="https://python.input.sk/1/03.html">
+    <link rel="prev" title="1. Úvod do Pythonu" href="https://python.input.sk/1/01.html">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/jquery-fix.js"></script>
+<script type="text/javascript" src="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/bootstrap-sphinx.js"></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default ">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://python.input.sk/index.html">
+          Programovanie v Pythone</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button" id="dLabelGlobalToc" data-toggle="dropdown" data-target="#" href="https://python.input.sk/index.html"> <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc" role="menu" aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Zimný semester</span></p>
+<li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/pravidla.html">Priebeh zimného semestra</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/01.html">1. Úvod do Pythonu</a></li><li class="toctree-l1 current"><a class="current reference internal" href="https://python.input.sk/1/02.html#">2. Podprogramy</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/03.html">3. Grafický režim</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/04.html">4. Podmienené príkazy</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/05.html">5. Zoznamy a n-tice</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/06.html">6. Znakové reťazce a súbory</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/07.html">7. Udalosti v grafickej aplikácii</a></li><li class="toctree-l1"><a class="reference internal" href="https://python.input.sk/1/08.html">8. Korytnačky (turtle)</a></li>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="https://python.input.sk/1/01.html" title="Previous Chapter: 1. Úvod do Pythonu"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">« 1. Úvod do Pythonu</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://python.input.sk/1/03.html" title="Next Chapter: 3. Grafický režim"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">3. Grafický režim »</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="https://python.input.sk/search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search">
+ </div>
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <section id="podprogramy">
+<h1>2. Podprogramy<a class="headerlink" href="https://python.input.sk/1/02.html#podprogramy" title="Link to this heading">¶</a></h1>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<aside class="warning sidebar">
+<nav class="contents local" id="obsah">
+<p class="topic-title">Obsah:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="https://python.input.sk/1/02.html#moduly-math-a-random" id="id2">Moduly math a random</a></p></li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/02.html#parametre-funkcii" id="id3">Parametre funkcií</a></p></li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/02.html#menny-priestor" id="id4">Menný priestor</a></p></li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/02.html#funkcie-s-navratovou-hodnotou" id="id5">Funkcie s návratovou hodnotou</a></p>
+<ul>
+<li><p><a class="reference internal" href="https://python.input.sk/1/02.html#vysledkom-funkcie-je-cislo" id="id6">Výsledkom funkcie je číslo</a></p></li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/02.html#vysledkom-funkcie-je-retazec" id="id7">Výsledkom funkcie je reťazec</a></p></li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/02.html#geometria" id="id8">Geometria</a></p></li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/02.html#niekolko-zaujimavych-matematickych-funkcii" id="id9">Niekoľko zaujímavých matematických funkcií</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/02.html#cvicenie" id="id10">Cvičenie</a></p></li>
+<li><p><a class="reference internal" href="https://python.input.sk/1/02.html#tyzdenny-projekt" id="id11">1. Týždenný projekt</a></p></li>
+</ul>
+</nav>
+</aside>
+<section id="moduly-math-a-random">
+<h2><a class="toc-backref" href="https://python.input.sk/1/02.html#id2" role="doc-backlink">Moduly math a random</a><a class="headerlink" href="https://python.input.sk/1/02.html#moduly-math-a-random" title="Link to this heading">¶</a></h2>
+<p>Poznáme už niektoré štandardné funkcie, ktoré sú zadefinované hneď pri štarte Pythonu:</p>
+<ul class="simple">
+<li><p>funkcia <code class="docutils literal notranslate"><span class="pre">type()</span></code> vráti typ zadanej hodnoty</p></li>
+<li><p>funkcie <code class="docutils literal notranslate"><span class="pre">int()</span></code>, <code class="docutils literal notranslate"><span class="pre">float()</span></code> a <code class="docutils literal notranslate"><span class="pre">str()</span></code> pretypujú (prekonvertujú) zadanú hodnotu na iný typ</p></li>
+<li><p>funkcie <code class="docutils literal notranslate"><span class="pre">print()</span></code> a <code class="docutils literal notranslate"><span class="pre">input()</span></code> sú určené na výpis textov a prečítanie textu zo vstupu</p></li>
+<li><p>funkcie <code class="docutils literal notranslate"><span class="pre">abs()</span></code> a <code class="docutils literal notranslate"><span class="pre">round()</span></code> počítajú absolútne hodnoty čísel a zaokrúhľujú desatinné čísla</p></li>
+<li><p>funkcie <code class="docutils literal notranslate"><span class="pre">len()</span></code> vráti dĺžku znakového reťazca</p></li>
+<li><p>funkcie <code class="docutils literal notranslate"><span class="pre">range()</span></code> a <code class="docutils literal notranslate"><span class="pre">reversed()</span></code> generujú postupnosť čísel, resp. ju otáčajú</p></li>
+<li><p>funkcia <code class="docutils literal notranslate"><span class="pre">help()</span></code> vypíše textové informácie o pythonových funkciách a objektoch</p></li>
+</ul>
+<p>Štandardných funkcií je oveľa viac a z mnohými z nich sa zoznámime neskôr. Teraz si ukážeme dva nové moduly (predstavme si ich ako nejaké knižnice užitočných funkcií), ktoré, hoci nie sú štandardne zabudované, my ich budeme potrebovať veľmi často. Ak potrebujeme pracovať s nejakým modulom, musíme to najprv Pythonu oznámiť špeciálnym spôsobom. Slúži na to príkaz <code class="docutils literal notranslate"><span class="pre">import</span></code>.</p>
+<h3 class="rubric">Modul math</h3>
+<p>Pomocou takéhoto zápisu:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+</pre></div>
+</div>
+<p>umožníme našim programom pracovať s matematickými funkciami z tejto knižnice. V skutočnosti týmto príkazom Python vytvorí novú premennú <code class="docutils literal notranslate"><span class="pre">math</span></code> (nové meno v pamäti mien premenných).</p>
+<p>Knižnica v tomto module obsahuje, napríklad tieto matematické funkcie: <code class="docutils literal notranslate"><span class="pre">sin()</span></code>, <code class="docutils literal notranslate"><span class="pre">cos()</span></code>, <code class="docutils literal notranslate"><span class="pre">sqrt()</span></code>. Lenže s takýmito funkciami nemôžeme pracovať priamo: Python nepozná ich mená, pozná jediné meno a to meno modulu <code class="docutils literal notranslate"><span class="pre">math</span></code>. Keďže tieto funkcie sa nachádzajú práve v tomto module, budeme k nim pristupovať, tzv. bodkovou notáciou (<strong>dot notation</strong>): za meno modulu uvedieme prvok (v tomto prípade funkciu) z daného modulu. Napríklad <code class="docutils literal notranslate"><span class="pre">math.sin()</span></code> označuje volanie funkcie <strong>sínus</strong> a <code class="docutils literal notranslate"><span class="pre">math.sqrt()</span></code> označuje výpočet druhej odmocniny čísla. Otestujme v interaktívnom režime:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">math</span>
+<span class="hll"><span class="go">    &lt;module 'math' (built-in)&gt;</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">math</span><span class="p">)</span>
+<span class="hll"><span class="go">    &lt;class 'module'&gt;</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">math</span><span class="o">.</span><span class="n">sin</span>
+<span class="hll"><span class="go">    &lt;built-in function sin&gt;</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">()</span>
+<span class="hll"><span class="go">    Traceback (most recent call last):</span>
+</span><span class="hll"><span class="go">      File "&lt;pyshell#14&gt;", line 1, in &lt;module&gt;</span>
+</span><span class="hll"><span class="go">        math.sin()</span>
+</span><span class="hll"><span class="go">    TypeError: sin() takes exactly one argument (0 given)</span>
+</span></pre></div>
+</div>
+<p>Posledná chybová správa oznamuje, že funkciu <code class="docutils literal notranslate"><span class="pre">sin</span></code> musíme volať práve s jedným parametrom (volanie bez parametrov sa Pythonu v tomto prípade nepáči).</p>
+<p>Ak zadáme <code class="docutils literal notranslate"><span class="pre">dir(math)</span></code> (z anglického <em>directory</em>, teda adresár), Python nám vypíše všetky prvky, ktoré sa nachádzajú v tomto module:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">math</span><span class="p">)</span>
+<span class="hll"><span class="go">    ['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh',</span>
+</span><span class="hll"><span class="go">    'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos',</span>
+</span><span class="hll"><span class="go">    'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial',</span>
+</span><span class="hll"><span class="go">    'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose',</span>
+</span><span class="hll"><span class="go">    'isfinite', 'isinf', 'isnan', 'isqrt', 'ldexp', 'lgamma', 'log', 'log10', 'log1p',</span>
+</span><span class="hll"><span class="go">    'log2', 'modf', 'nan', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin',</span>
+</span><span class="hll"><span class="go">    'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']</span>
+</span></pre></div>
+</div>
+<p>Väčšina prvkov modulu <code class="docutils literal notranslate"><span class="pre">math</span></code> nás zatiaľ nebude zaujímať, ale môžeme tam vidieť, napríklad aj funkcie <code class="docutils literal notranslate"><span class="pre">exp()</span></code>, <code class="docutils literal notranslate"><span class="pre">log()</span></code>, <code class="docutils literal notranslate"><span class="pre">tan()</span></code>, <code class="docutils literal notranslate"><span class="pre">radians()</span></code> ale aj známe konštanty <code class="docutils literal notranslate"><span class="pre">e</span></code> a <code class="docutils literal notranslate"><span class="pre">pi</span></code>. Ak chceme poznať detaily nejakého prvku modulu, môžeme použiť štandardnú funkciu <code class="docutils literal notranslate"><span class="pre">help()</span></code>, napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">)</span>
+<span class="hll"><span class="go">    Help on built-in function log in module math:</span>
+</span><span class="hll">
+</span><span class="hll"><span class="go">    log(...)</span>
+</span><span class="hll"><span class="go">        log(x[, base])</span>
+</span><span class="hll">
+</span><span class="hll"><span class="go">        Return the logarithm of x to the given base.</span>
+</span><span class="hll"><span class="go">        If the base not specified, returns the natural logarithm (base e) of x.</span>
+</span></pre></div>
+</div>
+<p>Môžeme sa dozvedieť, že funkcia <code class="docutils literal notranslate"><span class="pre">math.log()</span></code> počíta logaritmus čísla buď so základom <code class="docutils literal notranslate"><span class="pre">e</span></code> (prirodzené logaritmy) alebo s nejakým daným základom <code class="docutils literal notranslate"><span class="pre">base</span></code>.</p>
+<p>Podobne môžeme zadať:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">)</span>
+<span class="hll"><span class="go">    Help on built-in function sin in module math:</span>
+</span><span class="hll">
+</span><span class="hll"><span class="go">    sin(...)</span>
+</span><span class="hll"><span class="go">        sin(x)</span>
+</span><span class="hll">
+</span><span class="hll"><span class="go">        Return the sine of x (measured in radians).</span>
+</span></pre></div>
+</div>
+<p>Toto označuje, že funkcia <code class="docutils literal notranslate"><span class="pre">sin()</span></code> z modulu <code class="docutils literal notranslate"><span class="pre">math</span></code> naozaj počíta sínus, ale uhol musíme zadať v radiánoch. Preto, napríklad pre výpočet <code class="docutils literal notranslate"><span class="pre">sin(45)</span></code> musíme zapísať jednu z možností:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">45</span> <span class="o">*</span> <span class="mf">3.14159</span> <span class="o">/</span> <span class="mi">180</span><span class="p">)</span>
+<span class="hll"><span class="go">    0.7071063120935576</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">45</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">180</span><span class="p">)</span>
+<span class="hll"><span class="go">    0.7071067811865475</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">45</span><span class="p">))</span>
+<span class="hll"><span class="go">    0.7071067811865475</span>
+</span></pre></div>
+</div>
+<p>Druhý a tretí výpočet využívajú buď konštantu <code class="docutils literal notranslate"><span class="pre">pi</span></code> alebo konverznú funkciu <code class="docutils literal notranslate"><span class="pre">radians()</span></code>, ktorá prevádza stupne na radiány. Zrejme najčastejšie budeme používať tretí variant pomocou <code class="docutils literal notranslate"><span class="pre">radians()</span></code>.</p>
+<p>Vytvorme tabuľku hodnôt funkcií sínus aj kosínus pre uhly od <code class="docutils literal notranslate"><span class="pre">0</span></code> do <code class="docutils literal notranslate"><span class="pre">90</span></code> stupňov krokom <code class="docutils literal notranslate"><span class="pre">5</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="k">for</span> <span class="n">uhol</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="n">uhol_v_radianoch</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">uhol</span><span class="p">)</span>
+    <span class="n">sin_uhla</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">uhol_v_radianoch</span><span class="p">)</span>
+    <span class="n">cos_uhla</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">uhol_v_radianoch</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">uhol</span><span class="p">,</span> <span class="n">sin_uhla</span><span class="p">,</span> <span class="n">cos_uhla</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Výpis nie je veľmi pekný - obsahuje čísla vypísané zbytočne na veľa desatinných miest:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0 0.0 1.0
+5 0.08715574274765817 0.9961946980917455
+10 0.17364817766693033 0.984807753012208
+15 0.25881904510252074 0.9659258262890683
+...
+</pre></div>
+</div>
+<p>Urobme z toho zarovnanú tabuľku s tromi stĺpcami. Využijeme to, že vo formátovacom reťazci môžeme určiť, na akú šírku sa má dané desatinné číslo vypisovať. V našom prípade to bude šírka <code class="docutils literal notranslate"><span class="pre">6</span></code> znakov, pričom z toho budú <code class="docutils literal notranslate"><span class="pre">3</span></code> desatinné miesta. Hodnota v <code class="docutils literal notranslate"><span class="pre">{}</span></code> zátvorkách môže za znakom <code class="docutils literal notranslate"><span class="pre">':'</span></code> obsahovať takúto šírku výpisu. Všimnite si posledný riadok s volaním <code class="docutils literal notranslate"><span class="pre">print()</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="k">for</span> <span class="n">uhol</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="n">uhol_v_radianoch</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">uhol</span><span class="p">)</span>
+    <span class="n">sin_uhla</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">uhol_v_radianoch</span><span class="p">)</span>
+    <span class="n">cos_uhla</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">uhol_v_radianoch</span><span class="p">)</span>
+<span class="hll">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">uhol</span><span class="si">:</span><span class="s1">3</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">sin_uhla</span><span class="si">:</span><span class="s1">6.3f</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">cos_uhla</span><span class="si">:</span><span class="s1">6.3f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</span></pre></div>
+</div>
+<p>Prvé riadky výpisu teraz už vyzerajú takto:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  0  0.000  1.000
+  5  0.087  0.996
+ 10  0.174  0.985
+ 15  0.259  0.966
+ 20  0.342  0.940
+ 25  0.423  0.906
+...
+</pre></div>
+</div>
+<p>Pokúsme sa nakresliť (v textovej ploche pomocou nejakých znakov) priebeh funkcie sínus. Keďže oborom hodnôt tejto funkcie je interval reálnych čísel <code class="docutils literal notranslate"><span class="pre">&lt;-1,</span> <span class="pre">1&gt;</span></code> a my chceme tieto hodnoty natiahnuť na šírku výpisu do 80 znakov, zapíšeme:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="k">for</span> <span class="n">uhol</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">361</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="n">uhol_v_radianoch</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">uhol</span><span class="p">)</span>
+    <span class="n">sin_uhla</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">uhol_v_radianoch</span><span class="p">)</span>
+    <span class="n">stlpec</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sin_uhla</span> <span class="o">*</span> <span class="mi">35</span> <span class="o">+</span> <span class="mi">40</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">' '</span> <span class="o">*</span> <span class="n">stlpec</span> <span class="o">+</span> <span class="s1">'SIN'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sínusovka v textovej ploche potom vyzerá takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>                                   <span class="n">SIN</span>
+                                         <span class="n">SIN</span>
+                                              <span class="n">SIN</span>
+                                                    <span class="n">SIN</span>
+                                                         <span class="n">SIN</span>
+                                                             <span class="n">SIN</span>
+                                                                 <span class="n">SIN</span>
+                                                                   <span class="n">SIN</span>
+                                                                     <span class="n">SIN</span>
+                                                                      <span class="n">SIN</span>
+                                                                     <span class="n">SIN</span>
+                                                                   <span class="n">SIN</span>
+                                                                 <span class="n">SIN</span>
+                                                             <span class="n">SIN</span>
+                                                         <span class="n">SIN</span>
+                                                    <span class="n">SIN</span>
+                                              <span class="n">SIN</span>
+                                         <span class="n">SIN</span>
+                                   <span class="n">SIN</span>
+                            <span class="n">SIN</span>
+                       <span class="n">SIN</span>
+                 <span class="n">SIN</span>
+            <span class="n">SIN</span>
+        <span class="n">SIN</span>
+    <span class="n">SIN</span>
+  <span class="n">SIN</span>
+<span class="n">SIN</span>
+<span class="n">SIN</span>
+<span class="n">SIN</span>
+  <span class="n">SIN</span>
+    <span class="n">SIN</span>
+        <span class="n">SIN</span>
+            <span class="n">SIN</span>
+                 <span class="n">SIN</span>
+                       <span class="n">SIN</span>
+                            <span class="n">SIN</span>
+                                  <span class="n">SIN</span>
+</pre></div>
+</div>
+<p>Všimnite si, že všetky tri premenné <code class="docutils literal notranslate"><span class="pre">uhol_v_radianoch</span></code>, <code class="docutils literal notranslate"><span class="pre">sin_uhla</span></code> a <code class="docutils literal notranslate"><span class="pre">stlpec</span></code> v tele cyklu tu slúžia „len“ na zvýšenie čitateľnosti kódu a mohli by sme to zapísať aj bez nich:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="k">for</span> <span class="n">uhol</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">361</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">' '</span> <span class="o">*</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">uhol</span><span class="p">))</span> <span class="o">*</span> <span class="mi">35</span> <span class="o">+</span> <span class="mi">40</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'SIN'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Takýto zápis je menej prehľadný a neodporúčame ho používať najmä pre začiatočníkov.</p>
+<p><strong>Importovanie funkcií</strong> z knižníc môžeme zapísať aj trochu inak. V tomto druhom variante budú k dispozícii len tie funkcie, ktoré vymenujeme v tomto príkaze. Všeobecný tvar je:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">knižnica</span><span class="w"> </span><span class="kn">import</span> <span class="n">funkcia1</span><span class="p">,</span> <span class="n">funkcia2</span><span class="p">,</span> <span class="o">...</span>
+</pre></div>
+</div>
+<p>Týmto príkazom sa naimportujú len vymenované funkcie a ďalej sa budeme na ne v kóde odvolávať priamo ich menom a nebudeme písať meno knižnice a bodku. Napríklad, predchádzajúci príklad môžeme zapísať:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">radians</span>
+</span>
+<span class="k">for</span> <span class="n">uhol</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">361</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">' '</span> <span class="o">*</span> <span class="nb">int</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="n">uhol</span><span class="p">))</span> <span class="o">*</span> <span class="mi">35</span> <span class="o">+</span> <span class="mi">40</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'SIN'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Je na programátorovi, ktorý zápis použije. Niektorí uprednostňujú predchádzajúcu verziu s písaním mena knižnice aj s bodkou, lebo pri čítaní programu je zrejmejšie, odkiaľ daná funkcia prišla.</p>
+<h3 class="rubric">Modul random</h3>
+<p>Aj tento modul obsahuje knižnicu funkcií, ale tieto umožňujú generovanie náhodných čísel. My z tejto knižnice využijeme najmä tieto dve funkcie:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">randint()</span></code> vyberie náhodné číslo z intervalu celých čísel</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">choice()</span></code> vyberie náhodný prvok z nejakej postupnosti, napríklad zo znakového reťazca (postupnosti znakov)</p></li>
+</ul>
+<p>Aby sme mohli pracovať s týmito funkciami, nesmieme zabudnúť zapísať:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+</pre></div>
+</div>
+<p>Nasledovná ukážka ilustruje volanie funkcie <code class="docutils literal notranslate"><span class="pre">randint()</span></code>. Parametre tejto funkcie udávajú dolnú a hornú hranicu intervalu, z ktorého sa náhodne vyberie jedna hodnota. Každé volanie <code class="docutils literal notranslate"><span class="pre">random.randint(1,</span> <span class="pre">6)</span></code> <strong>náhodne</strong> vyberie jednu z hodnôt intervalu <code class="docutils literal notranslate"><span class="pre">&lt;1,</span> <span class="pre">6&gt;</span></code>, teda z množiny čísel <code class="docutils literal notranslate"><span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6</span></code>. Môžeme si to predstaviť ako hod hracou kockou, na ktorej sú čísla od 1 do 6. Nalsedovný program vypíše postupnosť 100 náhodných hodov kocky:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">nahodne</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nahodne</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>a po spustení dostaneme napríklad takéto výsledky:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>4 1 3 5 1 1 6 6 1 6 5 2 2 4 4 6 1 2 5 1 5 5 5 4 3 2 5 3 2 6 1 2 2 2 4 3 5 3 4 1
+3 4 4 4 5 4 3 6 6 1 3 3 4 3 5 5 4 6 3 2 2 4 3 2 6 1 5 5 3 6 5 6 6 5 4 5 5 6 3 6
+6 5 6 3 2 1 5 4 5 2 4 1 2 5 1 1 2 2 5 4
+</pre></div>
+</div>
+<p>Veľmi podobne funguje aj druhá funkcia <code class="docutils literal notranslate"><span class="pre">choice()</span></code>. Táto má len jeden parameter, ktorým je nejaká postupnosť hodnôt. Zatiaľ sme sa stretli s dvomi postupnosťami hodnôt: funkciou <code class="docutils literal notranslate"><span class="pre">range(...)</span></code> a so znakovými reťazcami. Ak zapíšeme:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Vygeneruje sa náhodné číslo z postupnosti nepárnych čísel: <code class="docutils literal notranslate"><span class="pre">1,</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">7,</span> <span class="pre">9</span></code>. V knižnici <code class="docutils literal notranslate"><span class="pre">random</span></code> existuje aj funkcia <code class="docutils literal notranslate"><span class="pre">randrange</span></code>, ktorá robí presne toto isté a zapísali by sme to <code class="docutils literal notranslate"><span class="pre">random.randrange(1,</span> <span class="pre">10,</span> <span class="pre">2)</span></code>.</p>
+<p>Pre nás je v súčasnosti najzaujímavejšou postupnosťou postupnosť znakov, teda ľubovoľný znakový reťazec. Napríklad volanie:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="s1">'aeiouy'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>vyberie <strong>náhodnú</strong> hodnotu z postupnosti šiestich znakov - postupnosti samohlások. Podobne by sme mohli zapísať:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="s1">'bcdfghjklmnpqrstvwxz'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>aj toto volanie vyberie <strong>náhodné</strong> písmeno z postupnosti spoluhlások. Keď to teraz dáme dokopy, dostaneme generátor náhodne vygenerovaných slov:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="n">slovo</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<span class="hll">    <span class="n">spoluhlaska</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="s1">'bcdfghjklmnpqrstvwxz'</span><span class="p">)</span>
+</span><span class="hll">    <span class="n">samohlaska</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="s1">'aeiouy'</span><span class="p">)</span>
+</span>    <span class="n">slovo</span> <span class="o">=</span> <span class="n">slovo</span> <span class="o">+</span> <span class="n">spoluhlaska</span> <span class="o">+</span> <span class="n">samohlaska</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">slovo</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Program vygeneruje 3 <strong>náhodné</strong> dvojice spoluhlások a samohlások, teda dvojpísmenových slabík. Vždy, keď budeme potrebovať ďalšie náhodné slovo, musíme spustiť tento program. Môžeme dostať, napríklad takéto náhodné slová:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gugaqo</span>
+
+<span class="n">lupiha</span>
+
+<span class="n">cyxebi</span>
+</pre></div>
+</div>
+<p>Ak by sme potrebovali vygenerovať naraz 10 slov, použijeme znovu for-cyklus. Preto cely náš program (okrem úvodného <code class="docutils literal notranslate"><span class="pre">import</span></code>) obalíme konštrukciou <code class="docutils literal notranslate"><span class="pre">for</span></code>, t.j. všetky riadky súčasného programu posunieme o 4 znaky vpravo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<span class="hll">    <span class="n">slovo</span> <span class="o">=</span> <span class="s1">''</span>
+</span><span class="hll">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+</span><span class="hll">        <span class="n">spoluhlaska</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="s1">'bcdfghjklmnpqrstvwxz'</span><span class="p">)</span>
+</span><span class="hll">        <span class="n">samohlaska</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="s1">'aeiouy'</span><span class="p">)</span>
+</span><span class="hll">        <span class="n">slovo</span> <span class="o">=</span> <span class="n">slovo</span> <span class="o">+</span> <span class="n">spoluhlaska</span> <span class="o">+</span> <span class="n">samohlaska</span>
+</span><span class="hll">    <span class="nb">print</span><span class="p">(</span><span class="n">slovo</span><span class="p">)</span>
+</span></pre></div>
+</div>
+<p>Všimnite si, že v tele vonkajšieho for-cyklu (s premennou cyklu <code class="docutils literal notranslate"><span class="pre">j</span></code>) sa nachádzajú tri príkazy: priradenie, potom tzv. <strong>vnorený</strong> for-cyklus a na koniec volanie funkcie <code class="docutils literal notranslate"><span class="pre">print()</span></code>.</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<h2 class="rubric">Vlastné funkcie</h2>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<p>Doteraz sme pracovali so štandardnými funkciami, napríklad</p>
+<ul class="simple">
+<li><p>vstup a výstup <code class="docutils literal notranslate"><span class="pre">input()</span></code> a <code class="docutils literal notranslate"><span class="pre">print()</span></code></p></li>
+<li><p>aritmetické funkcie <code class="docutils literal notranslate"><span class="pre">abs()</span></code> a <code class="docutils literal notranslate"><span class="pre">round()</span></code></p></li>
+<li><p>generovanie postupnosti čísel pre for-cyklus <code class="docutils literal notranslate"><span class="pre">range()</span></code></p></li>
+</ul>
+<p>Všetky tieto funkcie niečo vykonali (vypísali, prečítali, vypočítali, …) a niektoré z nich vrátili nejakú hodnotu, ktorú sme mohli ďalej spracovať. Tiež sme videli, že niektoré majú rôzny počet parametrov, prípadne sú niekedy volané bez parametrov.</p>
+<p>Okrem toho sme pracovali aj s funkciami, ktoré boli definované v iných moduloch:</p>
+<ul class="simple">
+<li><p>keď napíšeme <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">random</span></code>, môžeme pracovať, napríklad s funkciami <code class="docutils literal notranslate"><span class="pre">random.randint()</span></code> a <code class="docutils literal notranslate"><span class="pre">random.randrange()</span></code></p></li>
+<li><p>keď napíšeme <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">math</span></code>, môžeme pracovať, napríklad s funkciami <code class="docutils literal notranslate"><span class="pre">math.sin()</span></code> a <code class="docutils literal notranslate"><span class="pre">math.cos()</span></code></p></li>
+</ul>
+<p>Všetky tieto a tisícky ďalších naprogramovali pythonovskí programátori pred nejakým časom, aby nám neskôr zjednodušili samotné programovanie. Vytváranie vlastných funkcií pritom vôbec nie je komplikované a teraz sa to naučíme aj my.</p>
+<aside class="topic">
+<p class="topic-title">Funkcie</p>
+<p>Funkcia je pomenovaný blok príkazov (niekedy sa tomu hovorí aj podprogram). Popisujeme (<strong>definujeme</strong>) ju špeciálnou konštrukciou:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">meno_funkcie</span><span class="p">():</span>      <span class="c1"># zapamätaj si blok príkazov ako nový príkaz</span>
+</span>    <span class="n">prikaz</span>
+    <span class="n">prikaz</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>Keď zapíšeme definíciu funkcie, zatiaľ sa z bloku príkazov (hovoríme tomu <strong>telo funkcie</strong>) nič nevykoná. Táto definícia sa „len“ zapamätá a jej <strong>referencia</strong> sa priradí k zadanému menu - vlastne sa do premennej <code class="docutils literal notranslate"><span class="pre">meno_funkcie</span></code> priradí referencia na telo funkcie. Je to podobné tomu, ako sa priraďovacím príkazom do premennej priradí hodnota z pravej strany príkazu.</p>
+</aside>
+<p>Ako prvý príklad zapíšme takúto definíciu funkcie:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">vypis</span><span class="p">():</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'**********'</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'**********'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Zadefinovali sme funkciu s menom <code class="docutils literal notranslate"><span class="pre">vypis</span></code>, pričom telo funkcie obsahuje dva príkazy na výpis riadkov s hviezdičkami. Celý blok príkazov je odsunutý o 4 medzery rovnako ako sme odsúvali príkazy v cykloch a aj v podmienených príkazoch. Definícia tela funkcie končí vtedy, keď sa objaví riadok, ktorý už nie je odsunutý. Touto definíciou sa ešte žiadne príkazy z tela funkcie nevykonávajú. Na to potrebujeme túto funkciu <strong>zavolať</strong>.</p>
+<aside class="topic">
+<p class="topic-title">Volanie funkcie</p>
+<p>Volanie funkcie je taký zápis, ktorým sa začnú vykonávať príkazy z definície funkcie. Stačí zapísať meno funkcie so zátvorkami a funkcie sa spustí:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">meno_funkcie</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Samozrejme, že funkciu môžeme zavolať až vtedy, keď už Python pozná jej definíciu.</p>
+</aside>
+<p>Zavolajme funkciu <code class="docutils literal notranslate"><span class="pre">vypis</span></code> v príkazovom režime:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vypis</span><span class="p">()</span>
+<span class="hll"><span class="go">    **********</span>
+</span><span class="hll"><span class="go">    **********</span>
+</span><span class="gp">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<p>Vidíme, že sa vykonali oba príkazy z tela funkcie a potom Python ďalej čaká na ďalšie príkazy. Zapíšme volanie funkcie aj s jej definíciou priamo do skriptu (teda v programovom režime):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">vypis</span><span class="p">():</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'**********'</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'**********'</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">)</span>
+<span class="hll"><span class="n">vypis</span><span class="p">()</span>
+</span><span class="nb">print</span><span class="p">(</span><span class="s1">'* Python *'</span><span class="p">)</span>
+<span class="hll"><span class="n">vypis</span><span class="p">()</span>
+</span></pre></div>
+</div>
+<p>Skôr, ako to spustíme, si uvedomme, čo sa udeje pri spustení:</p>
+<ul class="simple">
+<li><p>zapamätá sa definícia funkcie v premennej <code class="docutils literal notranslate"><span class="pre">vypis</span></code></p></li>
+<li><p>vypíše sa slovo <code class="docutils literal notranslate"><span class="pre">'hello'</span></code></p></li>
+<li><p>zavolá sa funkcia <code class="docutils literal notranslate"><span class="pre">vypis()</span></code></p></li>
+<li><p>vypíše riadok s textom <code class="docutils literal notranslate"><span class="pre">'*</span> <span class="pre">Python</span> <span class="pre">*'</span></code></p></li>
+<li><p>znovu sa zavolá funkcia <code class="docutils literal notranslate"><span class="pre">vypis()</span></code></p></li>
+</ul>
+<p>A teraz to spustíme:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>hello
+**********
+**********
+* Python *
+**********
+**********
+</pre></div>
+</div>
+<p>Zapíšme teraz presné kroky, ktoré sa vykonajú pri volaní funkcie:</p>
+<ol class="arabic simple">
+<li><p>preruší sa vykonávanie práve bežiaceho programu (Python si presne <strong>zapamätá miesto</strong>, kde sa to stalo)</p></li>
+<li><p>skočí sa na začiatok volanej funkcie</p></li>
+<li><p>postupne sa vykonajú všetky príkazy</p></li>
+<li><p>keď sa príde na koniec funkcie, zrealizuje sa <strong>návrat na zapamätané miesto</strong>, kde sa prerušilo vykonávanie programu a pokračuje sa vo vykonávaní ďalších príkazov za volaním funkcie</p></li>
+</ol>
+<p>Pre volanie funkcie sú veľmi dôležité okrúhle zátvorky. Bez nich to už nie je volanie, ale len zisťovanie referencie na hodnotu, ktorá je priradená pre toto meno. Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vypis</span><span class="p">()</span>
+<span class="hll"><span class="go">    **********</span>
+</span><span class="hll"><span class="go">    **********</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">vypis</span>
+<span class="hll"><span class="go">    &lt;function vypis at 0x0205CB28&gt;</span>
+</span></pre></div>
+</div>
+<p>Ak by sme namiesto volania funkcie takto zapísali len meno funkcie bez zátvoriek, ale v skripte (teda nie v interaktívnom režime), táto hodnota referencie by sa nevypísala, ale odignorovala. Toto býva dosť častá chyba začiatočníkov, ktorá sa ale ťažšie odhaľuje.</p>
+<p>Ak zavoláme funkciu, ktorú sme ešte nedefinovali, Python vyhlási chybu, napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vipis</span><span class="p">()</span>
+<span class="hll"><span class="go">    ...</span>
+</span><span class="hll"><span class="go">    NameError: name 'vipis' is not defined</span>
+</span></pre></div>
+</div>
+<p>Samozrejme, že môžeme volať len definované funkcie.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vypis</span><span class="p">()</span>
+<span class="hll"><span class="go">    **********</span>
+</span><span class="hll"><span class="go">    **********</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">vypis</span> <span class="o">=</span> <span class="s1">'ahoj'</span>      <span class="c1"># tu sme zmenili obsah premennej vypis</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vypis</span>
+<span class="hll"><span class="go">    'ahoj'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">vypis</span><span class="p">()</span>
+<span class="hll"><span class="go">    ...</span>
+</span><span class="hll"><span class="go">    TypeError: 'str' object is not callable</span>
+</span></pre></div>
+</div>
+<p>Hodnotou premennej <code class="docutils literal notranslate"><span class="pre">vypis</span></code> je už teraz znakový reťazec, a ten sa „nedá zavolať“, t.j. nie je „callable“ (tento objekt nie je zavolateľný ako funkcia).</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+<section id="parametre-funkcii">
+<h2><a class="toc-backref" href="https://python.input.sk/1/02.html#id3" role="doc-backlink">Parametre funkcií</a><a class="headerlink" href="https://python.input.sk/1/02.html#parametre-funkcii" title="Link to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<p>Hotové funkcie, s ktorými sme doteraz pracovali, napríklad <code class="docutils literal notranslate"><span class="pre">print()</span></code> alebo <code class="docutils literal notranslate"><span class="pre">random.randint()</span></code>, mali aj parametre, vďaka čomu riešili rôzne úlohy. Parametre slúžia na to, aby sme mohli funkcii lepšie oznámiť, čo špecifické má urobiť: čo sa má vypísať, z akého intervalu má vygenerovať náhodné číslo, koľko znakov má vypísať, prípadne akých znakov, …</p>
+<aside class="topic">
+<p class="topic-title">Parametre funkcie</p>
+<p>Parametrom funkcie je <strong>dočasná premenná</strong>, ktorá vzniká pri volaní funkcie a prostredníctvom ktorej, môžeme do funkcie <em>poslať</em> nejakú hodnotu. Parametre funkcií definujeme počas definovania funkcie v <strong>hlavičke funkcie</strong> a ak ich je viac, oddeľujeme ich čiarkami:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">meno_funkcie</span><span class="p">(</span><span class="n">parameter</span><span class="p">):</span>
+</span>    <span class="n">prikaz</span>
+    <span class="n">prikaz</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</aside>
+<p>Môžeme napríklad zapísať:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">vypis_hviezdiciek</span><span class="p">(</span><span class="n">pocet</span><span class="p">):</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'*'</span> <span class="o">*</span> <span class="n">pocet</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>V prvom riadku definície funkcie (hlavička funkcie) pribudla jedna premenná <code class="docutils literal notranslate"><span class="pre">pocet</span></code> - parameter. Táto premenná vznikne automaticky pri volaní funkcie, preto musíme pri volaní oznámiť hodnotu tohto parametra. Volanie zapíšeme:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vypis_hviezdiciek</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="hll"><span class="go">    ******************************</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+<span class="go">        vypis_hviezdiciek(i)</span>
+
+<span class="hll"><span class="go">    *</span>
+</span><span class="hll"><span class="go">    **</span>
+</span><span class="hll"><span class="go">    ***</span>
+</span><span class="hll"><span class="go">    ****</span>
+</span><span class="hll"><span class="go">    *****</span>
+</span><span class="hll"><span class="go">    ******</span>
+</span><span class="hll"><span class="go">    *******</span>
+</span><span class="hll"><span class="go">    ********</span>
+</span><span class="hll"><span class="go">    *********</span>
+</span></pre></div>
+</div>
+<p>Pri volaní sa „skutočná hodnota“ <strong>priradí</strong> do parametra funkcie (premenná <code class="docutils literal notranslate"><span class="pre">pocet</span></code>).</p>
+<p>Už predtým sme popísali mechanizmus volania funkcie, ale to sme ešte nepoznali parametre. Teraz doplníme tento postup o spracovanie parametrov. Najprv trochu terminológie:</p>
+<ul class="simple">
+<li><p>pri definovaní funkcie v hlavičke funkcie uvádzame tzv. <strong>formálne parametre</strong>: sú to nové premenné, ktoré vzniknú až pri volaní funkcie</p></li>
+<li><p>pri volaní funkcie musíme do zátvoriek zapísať hodnoty, ktoré sa stanú tzv. <strong>skutočnými parametrami</strong>: tieto hodnoty sa pri volaní priradia do formálnych parametrov</p></li>
+</ul>
+<p><strong>Mechanizmus volania</strong> vysvetlíme na volaní <code class="docutils literal notranslate"><span class="pre">vypis_hviezdiciek(30)</span></code>:</p>
+<ol class="arabic simple">
+<li><p>zapamätá sa návratová adresa volania</p></li>
+<li><p>vytvorí sa <strong>nová</strong> premenná <code class="docutils literal notranslate"><span class="pre">pocet</span></code> (<strong>formálny parameter</strong>) a priradí sa do nej hodnota <strong>skutočného parametra</strong> <code class="docutils literal notranslate"><span class="pre">30</span></code></p></li>
+<li><p>vykonajú sa všetky príkazy v definícii funkcie (<strong>telo funkcie</strong>)</p></li>
+<li><p>zrušia sa všetky premenné, ktoré vznikli počas behu funkcie</p></li>
+<li><p>riadenie sa vráti na miesto, kde bolo volanie funkcie</p></li>
+</ol>
+<p>Už vieme, že priraďovací príkaz vytvára premennú a referenciou ju spojí s nejakou hodnotou. Premenné, ktoré <strong>vzniknú počas behu funkcie</strong>, sa stanú <strong>lokálnymi premennými</strong>: budú existovať len počas tohto behu a po skončení funkcie, sa automaticky zrušia. Aj parametre vznikajú pri štarte funkcie a zanikajú pri jej skončení: tieto premenné sú pre funkciu tiež lokálnymi premennými.</p>
+<p>V nasledovnom príklade funkcie <code class="docutils literal notranslate"><span class="pre">vypis_sucet()</span></code> počítame a vypisujeme súčet čísel od 1 po zadané <code class="docutils literal notranslate"><span class="pre">n</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">vypis_sucet</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span>    <span class="n">sucet</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">sucet</span> <span class="o">=</span> <span class="n">sucet</span> <span class="o">+</span> <span class="n">i</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'+'</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'='</span><span class="p">,</span> <span class="n">sucet</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Pri volaní funkcie sa pre parameter <code class="docutils literal notranslate"><span class="pre">n</span></code> = 10 vypíše:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vypis_sucet</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="hll"><span class="go">    1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55</span>
+</span></pre></div>
+</div>
+<p>Počas behu vzniknú 2 lokálne premenné (<code class="docutils literal notranslate"><span class="pre">sucet</span></code> a <code class="docutils literal notranslate"><span class="pre">i</span></code>) a jeden parameter, ktorý je pre funkciu tiež lokálnou premennou:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">n</span></code> vznikne pri štarte funkcie aj s hodnotou 10</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sucet</span></code> vznikne pri prvom priradení <code class="docutils literal notranslate"><span class="pre">sucet</span> <span class="pre">=</span> <span class="pre">1</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">i</span></code> vznikne pri štarte for-cyklu</p></li>
+</ul>
+<p>Po skončení behu funkcie sa všetky tieto premenné automaticky zrušia.</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+<section id="menny-priestor">
+<h2><a class="toc-backref" href="https://python.input.sk/1/02.html#id4" role="doc-backlink">Menný priestor</a><a class="headerlink" href="https://python.input.sk/1/02.html#menny-priestor" title="Link to this heading">¶</a></h2>
+<p>Aby sme lepšie pochopili, ako naozaj fungujú <strong>lokálne premenné</strong>, musíme rozumieť, čo to je a ako funguje <strong>menný priestor</strong> (namespace). Najprv trochu ďalšej terminológie: všetky identifikátory v Pythone sú jedným z troch typov (Python má pre identifikátory 3 rôzne typy tabuliek mien):</p>
+<ul class="simple">
+<li><p><strong>štandardné</strong>, napríklad <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">print</span></code>, …</p>
+<ul>
+<li><p>hovorí sa tomu <strong>builtins</strong></p></li>
+</ul>
+</li>
+<li><p><strong>globálne</strong> - definujeme ich na najvyššej úrovni mimo funkcií, napríklad funkcie <code class="docutils literal notranslate"><span class="pre">vypis_hviezdiciek</span></code>, <code class="docutils literal notranslate"><span class="pre">vypis_sucet</span></code>, alebo aj premenné <code class="docutils literal notranslate"><span class="pre">randint</span></code>, <code class="docutils literal notranslate"><span class="pre">math</span></code>, <code class="docutils literal notranslate"><span class="pre">sin</span></code> (zrejme <code class="docutils literal notranslate"><span class="pre">math</span></code> je referenciou na importovaný modul)</p>
+<ul>
+<li><p>hovorí sa tomu <strong>main</strong></p></li>
+</ul>
+</li>
+<li><p><strong>lokálne</strong> - vznikajú počas behu funkcie</p></li>
+</ul>
+<p>Tabuľka štandardných mien (builtins) je pre celý program len jedna, tiež tabuľka globálnych mien (main) je len jedna, ale každá funkcia má svoju „súkromnú“ lokálnu tabuľku mien, ktorá vznikne pri štarte (zavolaní) funkcie a zruší sa pri konci vykonávania funkcie.</p>
+<p>Keď na nejakom mieste použijeme identifikátor, Python ho najprv hľadá (v tzv. <strong>menných priestoroch</strong>):</p>
+<ul class="simple">
+<li><p>v lokálnej tabuľke mien, ak tam tento identifikátor nenájde, hľadá ho</p></li>
+<li><p>v globálnej tabuľke mien, ak tam tento identifikátor nenájde, hľadá ho</p></li>
+<li><p>v štandardnej tabuľke mien</p></li>
+</ul>
+<p>Ak nenájde v žiadnej z týchto tabuliek, hlási chybu <code class="docutils literal notranslate"><span class="pre">NameError:</span> <span class="pre">name</span> <span class="pre">'identifikátor'</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">defined</span></code>.</p>
+<p>Príkaz (štandardná funkcia) <code class="docutils literal notranslate"><span class="pre">dir()</span></code> vypíše tabuľku globálnych mien. Hoci pri štarte Pythonu by táto tabuľka mala byť prázdna, obsahuje niekoľko špeciálnych mien, ktoré začínajú aj končia znakmi <code class="docutils literal notranslate"><span class="pre">'__'</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">()</span>
+<span class="hll"><span class="go">    ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__',</span>
+</span><span class="hll"><span class="go">     '__package__', '__spec__']</span>
+</span></pre></div>
+</div>
+<p>Keď teraz vytvoríme nejaké nové globálne mená, objavia sa aj v tejto globálnej tabuľke:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">premenna</span> <span class="o">=</span> <span class="mi">2025</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">funkcia</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">pass</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">()</span>
+<span class="hll"><span class="go">    ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__',</span>
+</span><span class="hll"><span class="go">     '__package__', '__spec__', 'funkcia', 'premenna']</span>
+</span></pre></div>
+</div>
+<p>Podobne sa vieme dostať aj k tabuľke štandardných mien (builtins):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">__builtins__</span><span class="p">)</span>
+<span class="hll"><span class="go">    ['ArithmeticError', 'AssertionError', 'AttributeError', ...</span>
+</span></pre></div>
+</div>
+<p>Takto sa vypíšu všetky preddefinované mená. Vidíme medzi nimi, napríklad <code class="docutils literal notranslate"><span class="pre">'int'</span></code>, <code class="docutils literal notranslate"><span class="pre">'print'</span></code>, <code class="docutils literal notranslate"><span class="pre">'range'</span></code>, <code class="docutils literal notranslate"><span class="pre">'str'</span></code>, …</p>
+<p>S týmito tabuľkami súvisí aj príkaz na zrušenie premennej.</p>
+<aside class="topic">
+<p class="topic-title">príkaz <code class="docutils literal notranslate"><span class="pre">del</span></code></p>
+<p>Príkazom <code class="docutils literal notranslate"><span class="pre">del</span></code> zrušíme identifikátor z tabuľky mien. Formát príkazu:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">premenná</span>
+</pre></div>
+</div>
+<p>Príkaz najprv zistí, v ktorej tabuľke sa identifikátor nachádza (najprv pozrie do lokálnej a keď tam nenájde, tak do globálnej tabuľky) a potom ho z tejto tabuľky vyhodí. Príkaz ale nefunguje pre štandardné mená.</p>
+</aside>
+<p>Ukážme to na príklade: identifikátor <code class="docutils literal notranslate"><span class="pre">print</span></code> je menom štandardnej funkcie (v štandardnej tabuľke mien). Ak v priamom režime (čo je globálna úroveň mien) do premennej <code class="docutils literal notranslate"><span class="pre">print</span></code> priradíme nejakú hodnotu, toto meno vznikne v globálnej tabuľke:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">'ahoj'</span><span class="p">)</span>
+<span class="hll"><span class="go">    ahoj</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="o">=</span><span class="p">(</span><span class="s1">'ahoj'</span><span class="p">)</span>          <span class="c1"># do print sme priradili nejakú hodnotu</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span>
+<span class="hll"><span class="go">    'ahoj'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">'ahoj'</span><span class="p">)</span>
+<span class="hll"><span class="go">    ...</span>
+</span><span class="hll"><span class="go">    TypeError: 'str' object is not callable</span>
+</span></pre></div>
+</div>
+<p>Teraz už <code class="docutils literal notranslate"><span class="pre">print</span></code> nefunguje ako funkcia na výpis hodnôt, ale len ako obyčajná globálna premenná. Ale v štandardnej tabuľke mien <code class="docutils literal notranslate"><span class="pre">print</span></code> stále existuje, len je táto premenná <strong>prekrytá</strong> globálnym menom. Python predsa najprv prehľadáva globálnu tabuľku a až keď sa tam nenájde, hľadá sa v štandardnej tabuľke. A ako môžeme vrátiť funkčnosť štandardnej funkcie <code class="docutils literal notranslate"><span class="pre">print</span></code>? Stačí vymazať identifikátor z globálnej tabuľky:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">del</span> <span class="nb">print</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">'ahoj'</span><span class="p">)</span>
+<span class="hll"><span class="go">    ahoj</span>
+</span></pre></div>
+</div>
+<p>Vymazaním globálneho mena <code class="docutils literal notranslate"><span class="pre">print</span></code> ostane definovaný len identifikátor v tabuľke štandardných mien, teda opäť začne fungovať funkcia na výpis hodnôt.</p>
+<p>Pozrime sa teraz na prípad, keď sa v tele funkcie bude nachádzať volanie inej funkcie (tzv. <strong>vnorené volanie</strong>), napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">vypis_hviezdiciek</span><span class="p">(</span><span class="n">pocet</span><span class="p">):</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'*'</span> <span class="o">*</span> <span class="n">pocet</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">trojuholnik</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<span class="hll">        <span class="n">vypis_hviezdiciek</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></pre></div>
+</div>
+<p>Pri ich definovaní v globálnom mennom priestore vznikli dva identifikátory: <code class="docutils literal notranslate"><span class="pre">vypis_hviezdiciek</span></code> a <code class="docutils literal notranslate"><span class="pre">trojuholnik</span></code>. Zavoláme funkciu <code class="docutils literal notranslate"><span class="pre">trojuholnik</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">trojuholnik</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Najprv sa pre túto funkciu vytvorí jej menný priestor (lokálna tabuľka mien) s dvomi lokálnymi premennými: <code class="docutils literal notranslate"><span class="pre">n</span></code> a <code class="docutils literal notranslate"><span class="pre">i</span></code>. Teraz <strong>pri každom</strong> (vnorenom) volaní <code class="docutils literal notranslate"><span class="pre">vypis_hviezdiciek(i)</span></code> sa pre túto funkciu:</p>
+<ul class="simple">
+<li><p>vytvorí nový menný priestor s jedinou premennou <code class="docutils literal notranslate"><span class="pre">pocet</span></code></p></li>
+<li><p>vykoná sa príkaz <code class="docutils literal notranslate"><span class="pre">print()</span></code></p></li>
+<li><p>nakoniec sa zruší jej menný priestor, t.j. zanikne premenná <code class="docutils literal notranslate"><span class="pre">pocet</span></code></p></li>
+</ul>
+<p>Môžeme to odkrokovať pomocou <a class="reference external" href="http://www.pythontutor.com/visualize.html#mode=edit">http://www.pythontutor.com/visualize.html#mode=edit</a> (zapneme voľbu <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.6</span></code> alebo <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.11</span></code>):</p>
+<ul>
+<li><p>najprv do editovacieho okna zapíšeme nejaký program, napríklad:</p>
+<a class="reference internal image-reference" href="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/102_01.png"><img alt="najprv vložíme program" src="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/102_01.png" style="width: 553.5px; height: 353.5px;">
+</a>
+</li>
+<li><p>spustíme vizualizáciu pomocou tlačidla <strong>Visualize Execution</strong> a potom niekoľkokrát tlačíme  tlačidlo <strong>Forward &gt;</strong></p>
+<a class="reference internal image-reference" href="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/102_02.png"><img alt="po niekoľkých krokoch vizualizácie" src="./2. Podprogramy — Dokumentácia Programovanie v Pythone_files/102_02.png" style="width: 711.5px; height: 321.0px;">
+</a>
+</li>
+</ul>
+<p>Všimnite si, že v pravej časti tejto stránky sa postupne zobrazujú menné priestory (tu sa nazývajú <strong>frame</strong>):</p>
+<ul class="simple">
+<li><p>najprv len globálny priestor s premennými <code class="docutils literal notranslate"><span class="pre">vypis_hviezdiciek</span></code> a <code class="docutils literal notranslate"><span class="pre">trojuholnik</span></code></p></li>
+<li><p>potom sa postupne objavujú a aj miznú lokálne priestory týchto dvoch funkcií - na obrázku vidíme oba tieto menné priestory tesne pred ukončením vykonávania funkcie <code class="docutils literal notranslate"><span class="pre">trojuholnik</span></code> s parametrom <code class="docutils literal notranslate"><span class="pre">2</span></code></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+<section id="funkcie-s-navratovou-hodnotou">
+<h2><a class="toc-backref" href="https://python.input.sk/1/02.html#id5" role="doc-backlink">Funkcie s návratovou hodnotou</a><a class="headerlink" href="https://python.input.sk/1/02.html#funkcie-s-navratovou-hodnotou" title="Link to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<p>Väčšina štandardných funkcií v Pythone na základe parametrov vráti nejakú hodnotu, napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mf">5.5</span><span class="p">)</span>
+<span class="hll"><span class="go">    5.5</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="mf">2.36</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="hll"><span class="go">    2.4</span>
+</span></pre></div>
+</div>
+<p>Funkcie, ktoré sme zatiaľ vytvárali my, takú možnosť nemali: niečo počítali, niečo vypisovali, niečo kreslili, ale žiadnu návratovú hodnotu nevytvárali. Aby funkcia mohla vrátiť nejakú hodnotu ako výsledok volania funkcie, musí sa v jej tele objaviť príkaz <code class="docutils literal notranslate"><span class="pre">return</span></code>, napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">meno</span><span class="p">(</span><span class="n">parametre</span><span class="p">):</span>
+    <span class="n">prikaz</span>
+    <span class="n">prikaz</span>
+    <span class="o">...</span>
+<span class="hll">    <span class="k">return</span> <span class="n">hodnota</span>                  <span class="c1"># tato funkcia vráti výslednú hodnotu</span>
+</span></pre></div>
+</div>
+<p>Príkazom <code class="docutils literal notranslate"><span class="pre">return</span></code> sa ukončí výpočet funkcie (zruší sa jej menný priestor) a uvedená hodnota sa stáva výsledkom funkcie, napríklad:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">eura_na_koruny</span><span class="p">(</span><span class="n">eura</span><span class="p">):</span>                   <span class="c1"># prepočítanie na české koruny</span>
+    <span class="n">koruny</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">eura</span> <span class="o">*</span> <span class="mf">24.24</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">koruny</span>
+</pre></div>
+</div>
+<p>môžeme otestovať:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">'máš'</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">'euro, čo je'</span><span class="p">,</span> <span class="n">eura_na_koruny</span><span class="p">(</span><span class="mi">123</span><span class="p">),</span> <span class="s1">'českých korún'</span><span class="p">)</span>
+<span class="hll"><span class="go">    máš 123 euro, čo je 2981.52 českých korún</span>
+</span></pre></div>
+</div>
+<p>Niekedy potrebujeme návratovú hodnotu počítať pomocou nejakého cyklu, napríklad nasledovná funkcia počíta súčet čísel od 1 do <code class="docutils literal notranslate"><span class="pre">n</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">suma</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">vysledok</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">vysledok</span> <span class="o">+=</span> <span class="n">i</span>
+<span class="hll">    <span class="k">return</span> <span class="n">vysledok</span>
+</span></pre></div>
+</div>
+<p>Už sme videli, že rozlišujeme dva typy funkcií:</p>
+<ul class="simple">
+<li><p>také, ktoré niečo robia (napríklad vypisujú, „kreslia“ pomocou znakov , …), ale nevracajú návratovú hodnotu (neobsahujú <code class="docutils literal notranslate"><span class="pre">return</span></code> s nejakou hodnotou)</p></li>
+<li><p>také, ktoré niečo vypočítajú a vrátia nejakú výslednú hodnotu - musia obsahovať <code class="docutils literal notranslate"><span class="pre">return</span></code> s návratovou hodnotou</p></li>
+</ul>
+<p>Ďalej ukážeme, že rôzne funkcie môžu vracať hodnoty rôznych typov. Najprv číselné funkcie.</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<section id="vysledkom-funkcie-je-cislo">
+<h3><a class="toc-backref" href="https://python.input.sk/1/02.html#id6" role="doc-backlink">Výsledkom funkcie je číslo</a><a class="headerlink" href="https://python.input.sk/1/02.html#vysledkom-funkcie-je-cislo" title="Link to this heading">¶</a></h3>
+<p>Nasledovná funkcia počíta <code class="docutils literal notranslate"><span class="pre">n</span></code>-tú mocninu dvojky a tento výsledok ešte zníži o 1:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">pocitaj</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">**</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Zrejme výsledkom je vždy len číslo.</p>
+<p>Ak chceme funkciu otestovať, buď ju spustíme s konkrétnym parametrom, alebo napíšeme cyklus, ktorý našu funkciu spustí s konkrétnymi hodnotami (niekedy na testovanie píšeme ďalšiu testovaciu funkciu, ktorá nerobí nič iné, „len“ testuje funkciu pre rôzne hodnoty a porovnáva ich s očakávanými výsledkami), napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pocitaj</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="hll"><span class="go">    31</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">32</span><span class="p">:</span>
+<span class="go">        print(f'pocitaj({i}) = {pocitaj(i)}')</span>
+
+<span class="hll"><span class="go">    pocitaj(1) = 1</span>
+</span><span class="hll"><span class="go">    pocitaj(2) = 3</span>
+</span><span class="hll"><span class="go">    pocitaj(3) = 7</span>
+</span><span class="hll"><span class="go">    pocitaj(8) = 255</span>
+</span><span class="hll"><span class="go">    pocitaj(10) = 1023</span>
+</span><span class="hll"><span class="go">    pocitaj(16) = 65535</span>
+</span><span class="hll"><span class="go">    pocitaj(20) = 1048575</span>
+</span><span class="hll"><span class="go">    pocitaj(32) = 4294967295</span>
+</span></pre></div>
+</div>
+<p>Ďalšia funkcia zisťuje dĺžku (počet znakov) zadaného reťazca. Využíva to, že for-cyklus vie prejsť všetky znaky reťazca a s každým môže niečo urobiť, napríklad zvýšiť počítadlo o 1:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">dlzka</span><span class="p">(</span><span class="n">retazec</span><span class="p">):</span>
+    <span class="n">pocet</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">znak</span> <span class="ow">in</span> <span class="n">retazec</span><span class="p">:</span>
+        <span class="n">pocet</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">pocet</span>
+</pre></div>
+</div>
+<p>Otestujeme:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dlzka</span><span class="p">(</span><span class="s1">'Python'</span><span class="p">)</span>
+<span class="hll"><span class="go">    6</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">dlzka</span><span class="p">(</span><span class="mi">10000</span> <span class="o">*</span> <span class="s1">'ab'</span><span class="p">)</span>
+<span class="hll"><span class="go">    20000</span>
+</span></pre></div>
+</div>
+<p>Už sme videli, že existuje štandardná funkcia <code class="docutils literal notranslate"><span class="pre">len</span></code>, ktorá robí toto isté (a zrejme výrazne efektívnejšie).</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+<section id="vysledkom-funkcie-je-retazec">
+<h3><a class="toc-backref" href="https://python.input.sk/1/02.html#id7" role="doc-backlink">Výsledkom funkcie je reťazec</a><a class="headerlink" href="https://python.input.sk/1/02.html#vysledkom-funkcie-je-retazec" title="Link to this heading">¶</a></h3>
+<p>Napíšme funkciu, ktorá vráti nejaký reťazec v závislosti od hodnoty parametrov:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">spoj</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="hll">    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span></pre></div>
+</div>
+<p>Funkcia vráti zreťazenie dvoch hodnôt. Ak niektorá z hodnôt nie je znakový reťazec, tak ho na znakový reťazec prevedie. Zároveň vidíme, že formálny parameter (je to predsa lokálna premenná) môžeme v tele funkcie modifikovať (nemá to žiaden vplyv na hodnotu skutočného parametra).</p>
+<p>Otestujeme, napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">spoj</span><span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="mi">77</span><span class="p">)</span>
+<span class="hll"><span class="go">    12377</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">spoj</span><span class="p">(</span><span class="s1">'python'</span><span class="p">,</span> <span class="mf">3.11</span><span class="p">)</span>
+<span class="hll"><span class="go">    python3.11</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">spoj</span><span class="p">(</span><span class="s1">'Ah'</span><span class="p">,</span> <span class="s1">'oj'</span><span class="p">)</span>
+<span class="hll"><span class="go">    Ahoj</span>
+</span></pre></div>
+</div>
+<p>Túto funkciu môžeme zapísať aj takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">spoj</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+ <span class="k">return</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">a</span><span class="si">}{</span><span class="n">b</span><span class="si">}</span><span class="s1">'</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<section id="typy-parametrov-a-typ-vysledku">
+<h4>Typy parametrov a typ výsledku<a class="headerlink" href="https://python.input.sk/1/02.html#typy-parametrov-a-typ-vysledku" title="Link to this heading">¶</a></h4>
+<p>Python nekontroluje typy parametrov, ale kontroluje, čo sa s nimi robí vo funkcii. Napríklad funkcia:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">pocitaj</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span>    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>bude fungovať pre čísla, ale pre reťazec spadne:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pocitaj</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="hll"><span class="go">    11</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">pocitaj</span><span class="p">(</span><span class="s1">'a'</span><span class="p">)</span>
+<span class="hll"><span class="go">    ...</span>
+</span><span class="hll"><span class="go">    TypeError: Can't convert 'int' object to str implicitly</span>
+</span></pre></div>
+</div>
+<p>Neskôr sa naučíme testovať typ nejakých hodnôt a teda aj typ parametrov.</p>
+<p>Niektoré funkcie môžu fungovať rôzne pre rôzne typy, napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">urob</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="hll">    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">b</span>
+</span></pre></div>
+</div>
+<p>niekedy funguje pre čísla aj pre reťazce. Otestujte.</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+</section>
+<section id="geometria">
+<h3><a class="toc-backref" href="https://python.input.sk/1/02.html#id8" role="doc-backlink">Geometria</a><a class="headerlink" href="https://python.input.sk/1/02.html#geometria" title="Link to this heading">¶</a></h3>
+<p>Funkcia <code class="docutils literal notranslate"><span class="pre">vzd()</span></code> počíta vzdialenosť dvoch bodov <code class="docutils literal notranslate"><span class="pre">(x1,</span> <span class="pre">y1)</span></code> a <code class="docutils literal notranslate"><span class="pre">(x2,</span> <span class="pre">y2)</span></code> v rovine - tu sa použil známy vzorec z matematiky. Táto funkcia nič nevypisuje, ale vracia číselnú hodnotu (desatinné číslo).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">vzd</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">x1</span> <span class="o">-</span> <span class="n">x2</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">y1</span> <span class="o">-</span> <span class="n">y2</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="nahradna-hodnota-parametra">
+<h4>Náhradná hodnota parametra<a class="headerlink" href="https://python.input.sk/1/02.html#nahradna-hodnota-parametra" title="Link to this heading">¶</a></h4>
+<p>Naučíme sa zadefinovať parametre funkcie tak, aby sme pri volaní nemuseli uviesť všetky hodnoty skutočných parametrov, ale niektoré sa automaticky dosadia, tzv. náhradnou hodnotou (default), napríklad, na prvom cvičení sme kreslili takýto trojuholník:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>      *
+     *-*
+    *---*
+   *-----*
+  *-------*
+ *---------*
+*************
+</pre></div>
+</div>
+<p>Funkcia by mohla vyzerať takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">trojuholnik</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">obrys</span><span class="o">=</span><span class="s1">'*'</span><span class="p">,</span> <span class="n">vnutro</span><span class="o">=</span><span class="s1">'-'</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">' '</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">obrys</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">' '</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">obrys</span> <span class="o">+</span> <span class="n">vnutro</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">obrys</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">obrys</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>V hlavičke funkcie môžeme k niektorým parametrom uviesť náhradnú hodnotu (vyzerá to ako priradenie). V tomto prípade to označuje, že ak tomuto formálnemu parametru nebude zodpovedať skutočný parameter, dosadí sa práve táto náhradná hodnota. Pritom musí platiť, že keď nejakému parametru v definícii funkcie určíte, že má náhradnú hodnotu, tak náhradnú hodnotu musíte zadať aj všetkým ďalším formálnym parametrom, ktoré sa nachádzajú v zozname parametrov za ním (ak sme zadefinovali náhradnú hodnotu pre parameter <code class="docutils literal notranslate"><span class="pre">obrys</span></code>, musíme nejakú zadefinovať aj pre parameter <code class="docutils literal notranslate"><span class="pre">vnútro</span></code>).</p>
+<p>Teraz môžeme zapísať aj takéto volania tejto funkcie:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trojuholník</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>              <span class="c1"># obrys bude '*' a vnutro bude '-'</span>
+<span class="n">trojuholník</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">)</span>         <span class="c1"># obrys bude '#' a vnutro bude '-'</span>
+<span class="n">trojuholník</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">'.'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">)</span>    <span class="c1"># obrys bude '.' a vnutro bude '@'</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+<section id="parametre-volane-menom">
+<h4>Parametre volané menom<a class="headerlink" href="https://python.input.sk/1/02.html#parametre-volane-menom" title="Link to this heading">¶</a></h4>
+<p>Funkcia <code class="docutils literal notranslate"><span class="pre">trojuholník</span></code> má tri parametre: <code class="docutils literal notranslate"><span class="pre">n</span></code>, <code class="docutils literal notranslate"><span class="pre">obrys</span></code> a <code class="docutils literal notranslate"><span class="pre">vnutro</span></code>.</p>
+<p>Python umožňuje funkcie s parametrami volať tak, že skutočné parametre neurčujeme pozične (prvému skutočnému zodpovedá prvý formálny, druhému druhý, atď.) ale priamo pri volaní uvedieme meno parametra. Takto môžeme určiť hodnotu ľubovoľného parametra. Napríklad všetky tieto volania sú korektné:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trojuholník</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">vnutro</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+<span class="n">trojuholník</span><span class="p">(</span><span class="n">obrys</span><span class="o">=</span><span class="s1">'o'</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">trojuholník</span><span class="p">(</span><span class="n">vnutro</span><span class="o">=</span><span class="s1">'2'</span><span class="p">,</span> <span class="n">obrys</span><span class="o">=</span><span class="s1">'1'</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Samozrejme aj pri takomto volaní môžeme vynechať len tie parametre, ktoré majú určenú náhradnú hodnotu, všetky ostatné parametre sa musia v nejakom poradí objaviť v zozname skutočných parametrov.</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+</section>
+<section id="niekolko-zaujimavych-matematickych-funkcii">
+<h3><a class="toc-backref" href="https://python.input.sk/1/02.html#id9" role="doc-backlink">Niekoľko zaujímavých matematických funkcií</a><a class="headerlink" href="https://python.input.sk/1/02.html#niekolko-zaujimavych-matematickych-funkcii" title="Link to this heading">¶</a></h3>
+<p>Začneme funkciou, ktorá počíta <a class="reference external" href="https://sk.wikipedia.org/wiki/Cifern%C3%BD_s%C3%BA%C4%8Det">ciferný súčet celého čísla</a> (niečo podobné sme riešili na 1. cvičení):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">cs</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+    <span class="n">vysl</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">cifra</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">cislo</span><span class="p">):</span>
+        <span class="n">vysl</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cifra</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">vysl</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cs</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">20</span><span class="p">)</span>
+<span class="hll"><span class="go">    31</span>
+</span></pre></div>
+</div>
+<p>Už v prvej prednáške sme počítali <a class="reference external" href="https://sk.wikipedia.org/wiki/Faktori%C3%A1l">faktoriál</a> pomocou for-cyklu. Zapíšme to do funkcie:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">faktorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">vysl</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">vysl</span> <span class="o">*=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">vysl</span>
+</pre></div>
+</div>
+<p>Funkciu <code class="docutils literal notranslate"><span class="pre">faktorial</span></code> by sme mohli využiť na výpočet <a class="reference external" href="https://cs.wikipedia.org/wiki/Kombina%C4%8Dn%C3%AD_%C4%8D%C3%ADslo">kombinačného čísla</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">kombinacne_cislo</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">faktorial</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">//</span> <span class="p">(</span><span class="n">faktorial</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="n">faktorial</span><span class="p">(</span><span class="n">k</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Hoci je toto správny zápis, matematici vedia, že sa to dá počítať aj výrazne efektívnejšie. Veď, napríklad pre <code class="docutils literal notranslate"><span class="pre">kombinacne_cislo(100,</span> <span class="pre">2)</span></code> musí táto funkcia počítať dva veľké faktoriály <code class="docutils literal notranslate"><span class="pre">100!</span></code> a <code class="docutils literal notranslate"><span class="pre">98!</span></code> a potom ich medzi sebou deliť, pritom by stačilo vypočítať <code class="docutils literal notranslate"><span class="pre">100*99//2</span></code>. Kombinačné číslo sa dá vypočítať ako súčin <code class="docutils literal notranslate"><span class="pre">k</span></code> čísel od <code class="docutils literal notranslate"><span class="pre">n</span></code> smerom dole vydelené <code class="docutils literal notranslate"><span class="pre">k</span></code> faktoriálom. Zapíšme:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">kombinacne_cislo</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="n">vysl</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">k</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">vysl</span> <span class="o">*=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">vysl</span> <span class="o">//</span> <span class="n">faktorial</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ďalším veľmi známym matematickým pojmom je <a class="reference external" href="https://sk.wikipedia.org/wiki/Fibonacciho_postupnos%C5%A5">Fibonacciho postupnosť</a>. Táto postupnosť celých čísel začína dvomi číslami <code class="docutils literal notranslate"><span class="pre">0</span></code> a <code class="docutils literal notranslate"><span class="pre">1</span></code> a každé ďalšie sa počíta ako súčet dvoch predchádzajúcich členov postupnosti. Veľmi rýchlo by sme vedeli zapísať niekoľko prvých členov postupnosti:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="o">...</span>
+</pre></div>
+</div>
+<p>Napíšme funkciu, ktorá vypočíta <code class="docutils literal notranslate"><span class="pre">n</span></code>-ty člen tejto postupnosti (prvky budeme počítať od nultého, ktorého hodnota je <code class="docutils literal notranslate"><span class="pre">0</span></code>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">f1</span><span class="p">,</span> <span class="n">f2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">f1</span><span class="p">,</span> <span class="n">f2</span> <span class="o">=</span> <span class="n">f2</span><span class="p">,</span> <span class="n">f1</span> <span class="o">+</span> <span class="n">f2</span>
+    <span class="k">return</span> <span class="n">f1</span>
+</pre></div>
+</div>
+<p>Všimnite si tu použitie premennej cyklu <code class="docutils literal notranslate"><span class="pre">_</span></code>: je to korektné meno premennej a zvykne sa takto zapisovať v prípade, keď s touto premennou v tele cyklu nepracujeme. Otestujeme:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'fibonacci(</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">) = </span><span class="si">{</span><span class="n">fibonacci</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="hll"><span class="go">    fibonacci(0) = 0</span>
+</span><span class="hll"><span class="go">    fibonacci(1) = 1</span>
+</span><span class="hll"><span class="go">    fibonacci(2) = 1</span>
+</span><span class="hll"><span class="go">    fibonacci(3) = 2</span>
+</span><span class="hll"><span class="go">    fibonacci(4) = 3</span>
+</span><span class="hll"><span class="go">    fibonacci(5) = 5</span>
+</span><span class="hll"><span class="go">    fibonacci(6) = 8</span>
+</span><span class="hll"><span class="go">    fibonacci(7) = 13</span>
+</span><span class="hll"><span class="go">    fibonacci(8) = 21</span>
+</span><span class="hll"><span class="go">    fibonacci(9) = 34</span>
+</span></pre></div>
+</div>
+<p>Na záver preskúmajte dve funkcie, ktoré pracujú s náhodným generátorom:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">r</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">t</span><span class="p">():</span>
+    <span class="n">suc</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">r</span><span class="p">()):</span>
+        <span class="n">suc</span> <span class="o">+=</span> <span class="n">r</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">suc</span>
+</pre></div>
+</div>
+<p>Otázkou je, aká je minimálna a maximálne hodnota, ktorú môžeme dostať, ako výsledok volania funkcie <code class="docutils literal notranslate"><span class="pre">t()</span></code>?</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<div class="progress">
+<div class="progress-bar progress-bar" role="progressbar" style="width: 100%"></div>
+</div></section>
+</section>
+<section id="cvicenie">
+<h2><a class="toc-backref" href="https://python.input.sk/1/02.html#id10" role="doc-backlink">Cvičenie</a><a class="headerlink" href="https://python.input.sk/1/02.html#cvicenie" title="Link to this heading">¶</a></h2>
+<div class="danger admonition alert alert-danger alert-error">
+<p class="admonition-title">Poznámka</p>
+<ul>
+<li><p>riešenia úloh ulož do jedného súboru a odovzdaj na testovací server <a class="reference external" href="https://vektor.fmph.uniba.sk/courses/2025-2026-zima/programovanie-1/">https://vektor.fmph.uniba.sk/</a></p>
+<ul>
+<li><p>testovací server bude testovať úlohy označené znakom <kbd class="kbd docutils literal notranslate">#</kbd></p></li>
+<li><p>prvé tri riadky súboru s riešením musia obsahovať:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2. cvicenie</span>
+<span class="c1"># student: Janko Hrasko</span>
+<span class="c1"># datum: 25.9.2025</span>
+</pre></div>
+</div>
+<p>zrejme ako študenta uvedieš svoje meno.</p>
+</li>
+</ul>
+</li>
+<li><p>používaj len konštrukcie z doterajších prednášok (žiadne podmienené príkazy a zoznamy)</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic">
+<li><p>Napíš funkciu <code class="docutils literal notranslate"><span class="pre">obdlznik(sirka,</span> <span class="pre">znak='*')</span></code>, ktorá z daného znaku <code class="docutils literal notranslate"><span class="pre">znak</span></code> vypíše do troch riadkov výstupu obdĺžnik zadanej šírky. Napríklad pre volania:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">obdlznik</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">)</span>
+<span class="n">obdlznik</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">obdlznik</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="s1">'O'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>dostaneme výstup:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>##############################
+#                            #
+##############################
+******
+*    *
+******
+OOOOOOOOOOOOOOOOOOO
+O                 O
+OOOOOOOOOOOOOOOOOOO
+</pre></div>
+</div>
+<div class="note admonition alert alert-info">
+<p class="admonition-title">Riešenie</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">obdlznik</span><span class="p">(</span><span class="n">sirka</span><span class="p">,</span> <span class="n">znak</span><span class="o">=</span><span class="s1">'*'</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">znak</span> <span class="o">*</span> <span class="n">sirka</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">znak</span> <span class="o">+</span> <span class="s1">' '</span> <span class="o">*</span> <span class="p">(</span><span class="n">sirka</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">znak</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">znak</span> <span class="o">*</span> <span class="n">sirka</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="2">
+<li><p>Napíš funkciu <code class="docutils literal notranslate"><span class="pre">riadok(n,</span> <span class="pre">text='')</span></code>, ktorá vypíše <code class="docutils literal notranslate"><span class="pre">n</span></code> znakový reťazec hviezdičiek <code class="docutils literal notranslate"><span class="pre">'*'</span></code>, stred ktorého nahradí zadaným textom. Ak je tento zadaný <code class="docutils literal notranslate"><span class="pre">text</span></code> neprázdny, vloží na jeho začiatok aj koniec medzeru. Napríklad pre volania:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sir</span> <span class="o">=</span> <span class="mi">40</span>
+<span class="n">riadok</span><span class="p">(</span><span class="n">sir</span><span class="p">)</span>
+<span class="n">riadok</span><span class="p">(</span><span class="n">sir</span><span class="p">,</span> <span class="s1">'Ján Botto'</span><span class="p">)</span>
+<span class="n">riadok</span><span class="p">(</span><span class="n">sir</span><span class="p">,</span> <span class="s1">'Žltá ľalija'</span><span class="p">)</span>
+<span class="n">riadok</span><span class="p">(</span><span class="n">sir</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">)</span>
+<span class="n">riadok</span><span class="p">(</span><span class="n">sir</span><span class="p">,</span> <span class="s1">'Stojí stojí mohyla'</span><span class="p">)</span>
+<span class="n">riadok</span><span class="p">(</span><span class="n">sir</span><span class="p">,</span> <span class="s1">'Na mohyle zlá chvíľa'</span><span class="p">)</span>
+<span class="n">riadok</span><span class="p">(</span><span class="n">sir</span><span class="p">,</span> <span class="s1">'na mohyle tŕnie chrastie'</span><span class="p">)</span>
+<span class="n">riadok</span><span class="p">(</span><span class="n">sir</span><span class="p">,</span> <span class="s1">'a v tom tŕní chrastí rastie'</span><span class="p">)</span>
+<span class="n">riadok</span><span class="p">(</span><span class="n">sir</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>dostaneme výstup:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>****************************************
+************** Ján Botto ***************
+************* Žltá ľalija **************
+****************** - *******************
+********** Stojí stojí mohyla **********
+********* Na mohyle zlá chvíľa *********
+******* na mohyle tŕnie chrastie *******
+***** a v tom tŕní chrastí rastie ******
+****************************************
+</pre></div>
+</div>
+<div class="note admonition alert alert-info">
+<p class="admonition-title">Riešenie</p>
+<p>Ak by sme neriešili, že text môže byť prázdny reťazec:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">riadok</span><span class="p">(</span><span class="n">sir</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">''</span><span class="p">):</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s1">' '</span> <span class="o">+</span> <span class="n">text</span> <span class="o">+</span> <span class="s1">' '</span>         <span class="c1"># pridá medzery na začiatok a koniec textu</span>
+    <span class="n">pol1</span> <span class="o">=</span> <span class="p">(</span><span class="n">sir</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">))</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="n">pol2</span> <span class="o">=</span> <span class="n">sir</span> <span class="o">-</span> <span class="n">pol1</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'*'</span> <span class="o">*</span> <span class="n">pol1</span> <span class="o">+</span> <span class="n">text</span> <span class="o">+</span> <span class="s1">'*'</span> <span class="o">*</span> <span class="n">pol2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Prázdny reťazec (v prvom riadku tela funkcie) môžeme riešíť niekoľkými spôsobmi:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="p">(</span><span class="s1">' '</span> <span class="o">+</span> <span class="n">text</span> <span class="o">+</span> <span class="s1">' '</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># výraz (len(text) &gt; 0) má hodnotu 0 alebo 1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="p">(</span><span class="s1">' '</span> <span class="o">+</span> <span class="n">text</span> <span class="o">+</span> <span class="s1">' '</span><span class="p">)</span> <span class="o">*</span> <span class="nb">bool</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>      <span class="c1"># bool(text) má hodnotu 0 (pre prázdny) alebo 1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>              <span class="c1"># cyklus sa vykoná raz pre neprázdny text</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s1">' '</span> <span class="o">+</span> <span class="n">text</span> <span class="o">+</span> <span class="s1">' '</span>
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="3">
+<li><p><kbd class="kbd docutils literal notranslate">#</kbd> Napíš funkciu <code class="docutils literal notranslate"><span class="pre">priemer(a,</span> <span class="pre">b)</span></code>, ktorá vypočíta priemer dvoch zadaných čísel. Funkcia nič nevypisuje, ale pomocou <code class="docutils literal notranslate"><span class="pre">return</span></code> vráti vypočítanú hodnotu. Otestuj ju s rôznymi hodnotami parametrov. Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">priemer</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="hll"><span class="go">    2.5</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">priemer</span><span class="p">(</span><span class="mf">3.14</span><span class="p">,</span> <span class="mf">31.4</span><span class="p">)</span>
+<span class="hll"><span class="go">    17.27</span>
+</span></pre></div>
+</div>
+<div class="note admonition alert alert-info">
+<p class="admonition-title">Riešenie</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">priemer</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="4">
+<li><p><kbd class="kbd docutils literal notranslate">#</kbd> Napíš funkciu <code class="docutils literal notranslate"><span class="pre">sucet(od,</span> <span class="pre">do)</span></code>, ktorá vypočíta súčty druhých mocnín celých čísel z intervalu <code class="docutils literal notranslate"><span class="pre">&lt;od,</span> <span class="pre">do&gt;</span></code>, pričom z tejto postupnosti čísel vynechá každé druhé. Napríklad pre <code class="docutils literal notranslate"><span class="pre">sucty(5,</span> <span class="pre">10)</span></code> vypočíta súčet <code class="docutils literal notranslate"><span class="pre">5**2</span> <span class="pre">+</span> <span class="pre">7**2</span> <span class="pre">+</span> <span class="pre">9**2</span></code>.</p>
+<div class="note admonition alert alert-info">
+<p class="admonition-title">Riešenie</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">sucet</span><span class="p">(</span><span class="n">od</span><span class="p">,</span> <span class="n">do</span><span class="p">):</span>
+    <span class="n">vysl</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">od</span><span class="p">,</span> <span class="n">do</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">vysl</span> <span class="o">+=</span> <span class="n">i</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">vysl</span>
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="5">
+<li><p><kbd class="kbd docutils literal notranslate">#</kbd> Napíš funkciu <code class="docutils literal notranslate"><span class="pre">postupnost(start,</span> <span class="pre">stop,</span> <span class="pre">krok)</span></code>, ktorá dostáva parametre s rovnakým významom, ako vo funkcii <code class="docutils literal notranslate"><span class="pre">range()</span></code>. Funkcia vráti znakový reťazec s číslami z postupnosti <code class="docutils literal notranslate"><span class="pre">range(start,</span> <span class="pre">stop,</span> <span class="pre">krok)</span></code>, ktoré sú oddelené znakmi <code class="docutils literal notranslate"><span class="pre">',</span> <span class="pre">'</span></code>. Napríklad:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; postupnost(3, 40, 4)
+<span class="hll">    '3, 7, 11, 15, 19, 23, 27, 31, 35, 39, '
+</span></pre></div>
+</div>
+<div class="note admonition alert alert-info">
+<p class="admonition-title">Riešenie</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">postupnost</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">krok</span><span class="p">):</span>
+    <span class="n">vysl</span> <span class="o">=</span> <span class="s1">''</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">krok</span><span class="p">):</span>
+        <span class="n">vysl</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">', '</span>
+    <span class="k">return</span> <span class="n">vysl</span>
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="6">
+<li><p>Napíš funkciu <code class="docutils literal notranslate"><span class="pre">tabulka(od=0,</span> <span class="pre">do=90,</span> <span class="pre">krok=10)</span></code>, ktorý vytvorá takúto tabuľku: pre všetky uhly (v stupňoch) zo zadaného intervalu a kroku vypíše druhé mocniny príslušných sínusov a kosínusov a aj ich súčet. Druhé mocniny vypíše na šírku <code class="docutils literal notranslate"><span class="pre">6</span></code> a <code class="docutils literal notranslate"><span class="pre">4</span></code> desatinné miesta, súčet bez udania šírky a počtu desatinných miest. Môžeš dostať takýto výstup:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; tabulka()
+<span class="hll">      0 sin**2=0.0000 cos**2=1.0000 súčet=1.0
+</span><span class="hll">     10 sin**2=0.0302 cos**2=0.9698 súčet=0.9999999999999999
+</span><span class="hll">     20 sin**2=0.1170 cos**2=0.8830 súčet=1.0
+</span><span class="hll">     30 sin**2=0.2500 cos**2=0.7500 súčet=1.0
+</span><span class="hll">     40 sin**2=0.4132 cos**2=0.5868 súčet=0.9999999999999999
+</span><span class="hll">     50 sin**2=0.5868 cos**2=0.4132 súčet=1.0
+</span><span class="hll">     60 sin**2=0.7500 cos**2=0.2500 súčet=1.0
+</span><span class="hll">     70 sin**2=0.8830 cos**2=0.1170 súčet=0.9999999999999999
+</span><span class="hll">     80 sin**2=0.9698 cos**2=0.0302 súčet=0.9999999999999999
+</span><span class="hll">     90 sin**2=1.0000 cos**2=0.0000 súčet=1.0
+</span></pre></div>
+</div>
+<div class="note admonition alert alert-info">
+<p class="admonition-title">Riešenie</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'zadaj n: '</span><span class="p">))</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">radians</span>
+
+<span class="n">od</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'zadaj od: '</span><span class="p">))</span>
+<span class="n">do</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'zadaj do: '</span><span class="p">))</span>
+<span class="n">krok</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'zadaj krok: '</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">uhol</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">od</span><span class="p">,</span> <span class="n">do</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">krok</span><span class="p">):</span>
+    <span class="n">rad</span> <span class="o">=</span> <span class="n">radians</span><span class="p">(</span><span class="n">uhol</span><span class="p">)</span>
+    <span class="n">sin2</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="n">rad</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="n">cos2</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">rad</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">uhol</span><span class="si">:</span><span class="s1">3</span><span class="si">}</span><span class="s1"> sin**2=</span><span class="si">{</span><span class="n">sin2</span><span class="si">:</span><span class="s1">6.4f</span><span class="si">}</span><span class="s1"> cos**2=</span><span class="si">{</span><span class="n">cos2</span><span class="si">:</span><span class="s1">6.4f</span><span class="si">}</span><span class="s1"> súčet=</span><span class="si">{</span><span class="n">sin2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">cos2</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="7">
+<li><p>Vo vlaku sa vezie <code class="docutils literal notranslate"><span class="pre">100</span></code> cestujúcich. V každej stanici, v ktorej zastane, niekoľko ľudí vystúpi a niekoľko nastúpi. Napíš funkciu <code class="docutils literal notranslate"><span class="pre">vlak(n,</span> <span class="pre">start=100)</span></code>, ktorá odsimuluje <code class="docutils literal notranslate"><span class="pre">n</span></code> takýchto staníc s vystupovaním a nastupovaním cestujúcich, parameter <code class="docutils literal notranslate"><span class="pre">start</span></code> definuje štartový počet cestujúcich. Predpokladáme, že v každej stanici vystúpi aj nastúpi náhodný počet cestujúcich z intervalu <code class="docutils literal notranslate"><span class="pre">&lt;0,</span> <span class="pre">9&gt;</span></code>. Môžeš dostať takýto výstup:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; vlak(8)
+<span class="hll">    Vo vlaku bolo 100 ľudí, 0 nastúpilo, 7 vystúpilo. Zostalo 93.
+</span><span class="hll">    Vo vlaku bolo 93 ľudí, 4 nastúpilo, 0 vystúpilo. Zostalo 97.
+</span><span class="hll">    Vo vlaku bolo 97 ľudí, 9 nastúpilo, 5 vystúpilo. Zostalo 101.
+</span><span class="hll">    Vo vlaku bolo 101 ľudí, 3 nastúpilo, 9 vystúpilo. Zostalo 95.
+</span><span class="hll">    Vo vlaku bolo 95 ľudí, 6 nastúpilo, 8 vystúpilo. Zostalo 93.
+</span><span class="hll">    Vo vlaku bolo 93 ľudí, 3 nastúpilo, 4 vystúpilo. Zostalo 92.
+</span><span class="hll">    Vo vlaku bolo 92 ľudí, 8 nastúpilo, 6 vystúpilo. Zostalo 94.
+</span><span class="hll">    Vo vlaku bolo 94 ľudí, 8 nastúpilo, 7 vystúpilo. Zostalo 95.
+</span></pre></div>
+</div>
+<div class="note admonition alert alert-info">
+<p class="admonition-title">Riešenie</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">vlak</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">nast</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+        <span class="n">vyst</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Vo vlaku bolo </span><span class="si">{</span><span class="n">pocet</span><span class="si">}</span><span class="s1"> ľudí, </span><span class="si">{</span><span class="n">nast</span><span class="si">}</span><span class="s1"> nastúpilo, </span><span class="si">{</span><span class="n">vyst</span><span class="si">}</span><span class="s1"> vystúpilo. Zostalo </span><span class="si">{</span><span class="n">pocet</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nast</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">vyst</span><span class="si">}</span><span class="s1">.'</span><span class="p">)</span>
+        <span class="n">pocet</span> <span class="o">+=</span> <span class="n">nast</span> <span class="o">-</span> <span class="n">vyst</span>
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="8">
+<li><p>Dostali sme správu od mimozemšťanov, ktorá je zložená zo znakov <code class="docutils literal notranslate"><span class="pre">'O'</span></code> a <code class="docutils literal notranslate"><span class="pre">'-'</span></code>. Správa obsahuje istý počet riadkov a stĺpcov takýchto znakov. Napíš funkciu <code class="docutils literal notranslate"><span class="pre">sprava(pr,</span> <span class="pre">ps)</span></code>, ktorým náhodne vygeneruješ podobnú správu, parameter <code class="docutils literal notranslate"><span class="pre">ps</span></code> označuje počet riadkov a <code class="docutils literal notranslate"><span class="pre">ps</span></code> počet stĺpcov. Môžeš dostať takýto výstup:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; sprava(5, 28)
+<span class="hll">    O-OOO----OO-OOO---O---OOOO-O
+</span><span class="hll">    OOO-OOOO----OO----O-OOOOO-O-
+</span><span class="hll">    O-OO-OO-OOO--O-OOO--O----OOO
+</span><span class="hll">    ---OO--OO-O-O--OO----OOOO--O
+</span><span class="hll">    -O-----O--OOOO-OO-OOO-OO---O
+</span></pre></div>
+</div>
+<div class="note admonition alert alert-info">
+<p class="admonition-title">Riešenie</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">sprava</span><span class="p">(</span><span class="n">pr</span><span class="p">,</span> <span class="n">ps</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pr</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ps</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="s1">'O-'</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ol class="arabic" start="9">
+<li><p>Budeme simulovať hádzanie viacerými hracími kockami. Zakaždým vypíšeme aj ich súčet. Napíš funkciu <code class="docutils literal notranslate"><span class="pre">kocky(n,</span> <span class="pre">pocet)</span></code>, ktorá to simuluje <code class="docutils literal notranslate"><span class="pre">n</span></code>-krát, pričom v parametri <code class="docutils literal notranslate"><span class="pre">pocet</span></code> je počet kociek. Môžeš dostať takýto výstup:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; kocky(3, 4)
+<span class="hll">    na 1. kocke padla 3
+</span><span class="hll">    na 2. kocke padla 2
+</span><span class="hll">    na 3. kocke padla 2
+</span><span class="hll">    na 4. kocke padla 2
+</span><span class="hll">    ich súčet je 9
+</span><span class="hll">    ======================
+</span><span class="hll">    na 1. kocke padla 4
+</span><span class="hll">    na 2. kocke padla 6
+</span><span class="hll">    na 3. kocke padla 1
+</span><span class="hll">    na 4. kocke padla 5
+</span><span class="hll">    ich súčet je 16
+</span><span class="hll">    ======================
+</span><span class="hll">    na 1. kocke padla 1
+</span><span class="hll">    na 2. kocke padla 4
+</span><span class="hll">    na 3. kocke padla 6
+</span><span class="hll">    na 4. kocke padla 3
+</span><span class="hll">    ich súčet je 14
+</span><span class="hll">    ======================
+</span></pre></div>
+</div>
+<div class="note admonition alert alert-info">
+<p class="admonition-title">Riešenie</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">kocky</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">pocet</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">sucet</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">pocet</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">kocka</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+            <span class="n">sucet</span> <span class="o">+=</span> <span class="n">kocka</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'na </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">. kocke padla'</span><span class="p">,</span> <span class="n">kocka</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'ich súčet je'</span><span class="p">,</span> <span class="n">sucet</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'======================'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<div class="progress">
+<div class="progress-bar progress-bar" role="progressbar" style="width: 100%"></div>
+</div></section>
+<section id="tyzdenny-projekt">
+<h2><a class="toc-backref" href="https://python.input.sk/1/02.html#id11" role="doc-backlink">1. Týždenný projekt</a><a class="headerlink" href="https://python.input.sk/1/02.html#tyzdenny-projekt" title="Link to this heading">¶</a></h2>
+<div class="danger admonition alert alert-danger alert-error">
+<p class="admonition-title">Poznámka</p>
+<ul>
+<li><p>riešenie úloh ulož do jedného textového súboru s príponou <code class="docutils literal notranslate"><span class="pre">.py</span></code>  a odovzdaj na testovací server <a class="reference external" href="https://vektor.fmph.uniba.sk/courses/2025-2026-zima/programovanie-1/">https://vektor.fmph.uniba.sk/</a> najneskôr 12.októbra do 18:00.</p>
+<ul>
+<li><p>prvé tri riadky súboru s riešením musia obsahovať:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. tyzdenny projekt</span>
+<span class="c1"># student: Janko Hrasko</span>
+<span class="c1"># datum: 28.9.2025</span>
+</pre></div>
+</div>
+<p>zrejme ako študenta uvedieš svoje meno, dátum uprav podľa dátumu odovzdania</p>
+</li>
+</ul>
+</li>
+<li><p>používaj len konštrukcie z doterajších prednášok (žiadne podmienené príkazy a zoznamy)</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<p>Napíš pythonovský skript s troma funkciami:</p>
+<ul>
+<li><p>Funkcia <code class="docutils literal notranslate"><span class="pre">scitaj(n)</span></code> si postupne zo vstupu vypýta (pomocou <code class="docutils literal notranslate"><span class="pre">input</span></code>) <code class="docutils literal notranslate"><span class="pre">n</span></code> celých čísel a vráti znakový reťazec s načítanými číslami a ich súčtom. Parameter <code class="docutils literal notranslate"><span class="pre">n</span></code> má hodnotu väčšiu ako <code class="docutils literal notranslate"><span class="pre">0</span></code>. Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">scitaj</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="hll"><span class="go">    Zadaj 1. cislo: 123</span>
+</span><span class="hll"><span class="go">    Zadaj 2. cislo: 9</span>
+</span><span class="hll"><span class="go">    Zadaj 3. cislo: 24</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span>
+<span class="hll"><span class="go">    '123 + 9 + 24 = 156'</span>
+</span></pre></div>
+</div>
+<p>Funkciu <code class="docutils literal notranslate"><span class="pre">input</span></code> používaj v celom skripte iba v tele tejto funkcie.</p>
+</li>
+<li><p>Funkcia <code class="docutils literal notranslate"><span class="pre">fibonacci_medzi(od,</span> <span class="pre">do)</span></code> vráti znakový reťazec so zoznamom fibonacciho čísel ale iba z otvoreného intervalu <code class="docutils literal notranslate"><span class="pre">&lt;od,</span> <span class="pre">do)</span></code> (podobne ako <code class="docutils literal notranslate"><span class="pre">range</span></code>). Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">fibonacci_medzi</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span>
+<span class="hll"><span class="go">    '0 1 1 2 3 5 '</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">fibonacci_medzi</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<span class="hll"><span class="go">    '55 89 144 233 '</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">fibonacci_medzi</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">101</span><span class="p">)</span>
+<span class="hll"><span class="go">    '354224848179261915075 '</span>
+</span></pre></div>
+</div>
+</li>
+<li><p>Funkcia <code class="docutils literal notranslate"><span class="pre">tabulka(n,</span> <span class="pre">start)</span></code> vráti znakový reťazec s trojuholníkovou tabuľkou čísel v šestnástkovej sústave. Čísla sa do tabuľky dopĺňajú pstupne od štartovacieho čísla <code class="docutils literal notranslate"><span class="pre">start</span></code> a tabuľka sa skladá z <code class="docutils literal notranslate"><span class="pre">n</span></code> riadkov, pričom v prvom je <code class="docutils literal notranslate"><span class="pre">n</span></code> čísel a každý ďalší má o jedno číslo menej. Na vytváranie 16-ových čísel použi formátovanie <code class="docutils literal notranslate"><span class="pre">f'{cislo:03x}'</span></code> (môžeš si pozrieť <a class="reference external" href="https://docs.python.org/3/library/string.html#formatspec">dokumentáciu o formátovacích parametroch</a>). Parameter <code class="docutils literal notranslate"><span class="pre">n</span></code> má hodnotu väčšiu ako <code class="docutils literal notranslate"><span class="pre">0</span></code>. Napríklad:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="n">tabulka</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">z</span>
+<span class="hll"><span class="go">    '008 009 00A 00B\n    00C 00D 00E\n        00F 010\n            011'</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="hll"><span class="go">    008 009 00A 00B</span>
+</span><span class="hll"><span class="go">        00C 00D 00E</span>
+</span><span class="hll"><span class="go">            00F 010</span>
+</span><span class="hll"><span class="go">                011</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">tabulka</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">240</span><span class="p">))</span>
+<span class="hll"><span class="go">    0F0 0F1 0F2 0F3 0F4 0F5 0F6</span>
+</span><span class="hll"><span class="go">        0F7 0F8 0F9 0FA 0FB 0FC</span>
+</span><span class="hll"><span class="go">            0FD 0FE 0FF 100 101</span>
+</span><span class="hll"><span class="go">                102 103 104 105</span>
+</span><span class="hll"><span class="go">                    106 107 108</span>
+</span><span class="hll"><span class="go">                        109 10A</span>
+</span><span class="hll"><span class="go">                            10B</span>
+</span></pre></div>
+</div>
+</li>
+</ul>
+<p>Vo všetkých troch funkciách si dávaj pozor na správny počet medzier vo výslednýc hodnotách.</p>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="https://python.input.sk/1/02.html#">Back to top</a>
+      
+    </p>
+    <p>
+        © <a href="https://python.input.sk/copyright.html">Copyright</a> 2025, Andrej Blaho.<br>
+      Naposledy aktualizované 15. okt. 2025.<br>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.2.3.<br>
+    </p>
+  </div>
+</footer>
+  
+</body></html>
